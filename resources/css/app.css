@@ -1,9 +1,63 @@
-@import 'tailwindcss';
+@import "./fonts.css";
+@import "tailwindcss";
 
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../storage/framework/views/*.php';
 
 @theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
+    /* --font-sans:
+        "Instrument Sans", ui-sans-serif, system-ui, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+        "Noto Color Emoji"; */
+
+    /* Gold */
+    --color-gold-50: #fdfbee;
+    --color-gold-100: #fbf5d5;
+    --color-gold-200: #f6ea9f;
+    --color-gold-300: #efda67;
+    --color-gold-400: #e5c158;
+    --color-gold: #d4af37;
+    --color-gold-600: #c5a059;
+    --color-gold-700: #a37e36;
+    --color-gold-800: #7d5f2b;
+    --color-gold-900: #4d3a1b;
+
+    /* Obsidian */
+    --color-obsidian-950: #0b0c10;
+    --color-obsidian-900: #12141c;
+    --color-obsidian-800: #1a1d27;
+    --color-obsidian-700: #262a38;
+    --color-obsidian-600: #343a4d;
+
+    /* Font Family */
+    --font-sans: "Inter", sans-serif;
+    --font-heading: "Montserrat", sans-serif;
+    --font-serif: "Playfair Display", serif;
+}
+
+/* Modern Clean Matte Shadows & Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #0b0c10;
+}
+::-webkit-scrollbar-thumb {
+    background: #c5a059;
+    border-radius: 4px;
+}
+.border-gold-solid {
+    border-color: #d4af37;
+}
+.bg-gold-solid {
+    background-color: #d4af37;
+}
+.btn-gold {
+    background-color: #d4af37;
+    color: #0b0c10;
+    transition: all 0.2s ease-in-out;
+}
+.btn-gold:hover {
+    background-color: #e5c158;
+    transform: translateY(-2px);
 }
