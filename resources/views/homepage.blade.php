@@ -646,9 +646,6 @@
 
         <!-- JAVASCRIPT CODE -->
         <script>
-            // Initialize Lucide Icons
-            lucide.createIcons();
-
             // Mobile Menu Toggle
             const mobileMenuBtn = document.getElementById('mobileMenuBtn');
             const mobileMenu = document.getElementById('mobileMenu');
@@ -658,11 +655,12 @@
             });
 
             // Countdown Timer Logic (Dec 19, 2026 17:30:00 WIB)
-            const targetEventDate = new Date("December 19, 2026 17:30:00").getTime();
+            const targetEventDate = new Date("December 13, 2026 17:00:00").getTime();
 
             function updateCountdown() {
                 const now = new Date().getTime();
                 const diff = targetEventDate - now;
+                console.log("Hello World")
 
                 if (diff > 0) {
                     const days = Math.floor(diff / (1000 * 60 * 60 * 24));
@@ -681,6 +679,7 @@
                     document.getElementById('cd-seconds').innerText = '00';
                 }
             }
+
             setInterval(updateCountdown, 1000);
             updateCountdown();
 
