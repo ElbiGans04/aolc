@@ -61,3 +61,12 @@
     background-color: #e5c158;
     transform: translateY(-2px);
 }
+
+/* Custom Parallax Background Effect */
+.parallax-bg {
+    background-image: url('../images/aolc.webp');
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
