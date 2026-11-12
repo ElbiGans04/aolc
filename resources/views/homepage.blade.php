@@ -119,17 +119,17 @@
 
                 <h1 class="font-heading font-black text-4xl sm:text-6xl lg:text-7xl uppercase tracking-tight text-slate-100 leading-none mb-6">
                     Youth Christmas <br>
-                    <span class="text-gold font-serif italic font-normal capitalize">AOLC Celebration</span> 2026
+                    <span id="typing-text" class="text-gold font-serif italic font-normal capitalize">AOLC Celebration</span> 2026
                 </h1>
 
                 <div class="w-20 h-1 bg-gold mx-auto mb-6"></div>
 
-                <p class="max-w-2xl mx-auto text-slate-300 text-sm sm:text-base md:text-lg font-normal leading-relaxed mb-10">
+                <p data-blur-reveal class="max-w-2xl mx-auto text-slate-300 text-sm sm:text-base md:text-lg font-normal leading-relaxed mb-10">
                     "Terang itu bercahaya di dalam kegelapan dan kegelapan itu tidak menguasainya."
                     <span class="block mt-2 font-bold text-gold text-xs sm:text-sm tracking-wider uppercase">— Yohanes 1:5</span>
                 </p>
 
-                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <div data-blur-reveal class="flex flex-col sm:flex-row items-center justify-center gap-4">
                     <a href="#rsvp" class="w-full sm:w-auto btn-gold px-8 py-4 rounded-xl font-extrabold text-sm uppercase tracking-wider flex items-center justify-center gap-2">
                         <i data-lucide="ticket" class="w-4 h-4"></i> Konfirmasi Kehadiran
                     </a>
@@ -148,19 +148,19 @@
                 </p>
                 
                 <div class="grid grid-cols-4 gap-3 sm:gap-6 text-center">
-                    <div class="bg-obsidian-950 rounded-xl p-4 sm:p-6 border border-obsidian-800">
+                    <div data-reveal class="bg-obsidian-950 rounded-xl p-4 sm:p-6 border border-obsidian-800">
                         <span id="cd-days" class="font-heading font-black text-2xl sm:text-4xl text-gold block">00</span>
                         <span class="text-[10px] sm:text-xs text-slate-400 uppercase tracking-widest mt-1 block">Hari</span>
                     </div>
-                    <div class="bg-obsidian-950 rounded-xl p-4 sm:p-6 border border-obsidian-800">
+                    <div data-reveal class="bg-obsidian-950 rounded-xl p-4 sm:p-6 border border-obsidian-800">
                         <span id="cd-hours" class="font-heading font-black text-2xl sm:text-4xl text-gold block">00</span>
                         <span class="text-[10px] sm:text-xs text-slate-400 uppercase tracking-widest mt-1 block">Jam</span>
                     </div>
-                    <div class="bg-obsidian-950 rounded-xl p-4 sm:p-6 border border-obsidian-800">
+                    <div data-reveal class="bg-obsidian-950 rounded-xl p-4 sm:p-6 border border-obsidian-800">
                         <span id="cd-minutes" class="font-heading font-black text-2xl sm:text-4xl text-gold block">00</span>
                         <span class="text-[10px] sm:text-xs text-slate-400 uppercase tracking-widest mt-1 block">Menit</span>
                     </div>
-                    <div class="bg-obsidian-950 rounded-xl p-4 sm:p-6 border border-obsidian-800">
+                    <div data-reveal class="bg-obsidian-950 rounded-xl p-4 sm:p-6 border border-obsidian-800">
                         <span id="cd-seconds" class="font-heading font-black text-2xl sm:text-4xl text-gold block">00</span>
                         <span class="text-[10px] sm:text-xs text-slate-400 uppercase tracking-widest mt-1 block">Detik</span>
                     </div>
@@ -171,7 +171,7 @@
         <!-- EVENT DETAILS & LOCATION SECTION -->
         <section id="details" class="py-24 px-4 bg-obsidian-950">
             <div class="max-w-6xl mx-auto">
-                <div class="text-center mb-16">
+                <div data-reveal class="text-center mb-16">
                     <span class="text-gold text-xs font-bold uppercase tracking-widest">Informasi Penting</span>
                     <h2 class="font-heading font-black text-3xl sm:text-4xl text-slate-100 uppercase mt-2">Waktu & Tempat</h2>
                     <div class="w-12 h-1 bg-gold mx-auto mt-4"></div>
@@ -179,7 +179,7 @@
 
                 <div class="grid md:grid-cols-2 gap-8 mb-12">
                     <!-- Date & Time Info Card -->
-                    <div class="bg-obsidian-900 p-8 rounded-2xl border border-obsidian-800 hover:border-gold/50 transition-all">
+                    <div data-reveal class="bg-obsidian-900 p-8 rounded-2xl border border-obsidian-800 hover:border-gold/50 transition-all">
                         <div class="w-12 h-12 rounded-xl bg-gold/10 border border-gold/30 flex items-center justify-center text-gold mb-6">
                             <i data-lucide="calendar" class="w-6 h-6"></i>
                         </div>
@@ -203,7 +203,7 @@
                     </div>
 
                     <!-- Venue Info Card -->
-                    <div class="bg-obsidian-900 p-8 rounded-2xl border border-obsidian-800 hover:border-gold/50 transition-all flex flex-col justify-between">
+                    <div data-reveal class="bg-obsidian-900 p-8 rounded-2xl border border-obsidian-800 hover:border-gold/50 transition-all flex flex-col justify-between">
                         <div>
                             <div class="w-12 h-12 rounded-xl bg-gold/10 border border-gold/30 flex items-center justify-center text-gold mb-6">
                                 <i data-lucide="map-pin" class="w-6 h-6"></i>
@@ -298,7 +298,7 @@
 
                 <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
                     <!-- Card 1 -->
-                    <div class="bg-obsidian-900 rounded-2xl overflow-hidden border border-obsidian-800 hover:border-gold transition-all group">
+                    <div data-blur-reveal class="bg-obsidian-900 rounded-2xl overflow-hidden border border-obsidian-800 hover:border-gold transition-all group">
                         <div class="h-64 bg-obsidian-800 relative overflow-hidden">
                             <img src="/images/pdt-pardjo.webp" alt="Speaker" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 grayscale group-hover:grayscale-0">
                         </div>
@@ -310,7 +310,7 @@
                     </div>
 
                     <!-- Card 1 -->
-                    <div class="bg-obsidian-900 rounded-2xl overflow-hidden border border-obsidian-800 hover:border-gold transition-all group">
+                    <div data-blur-reveal class="bg-obsidian-900 rounded-2xl overflow-hidden border border-obsidian-800 hover:border-gold transition-all group">
                         <div class="h-64 bg-obsidian-800 relative overflow-hidden">
                             <img src="/images/pdt-tedi.jpg" alt="Speaker" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 grayscale group-hover:grayscale-0">
                         </div>
@@ -322,7 +322,7 @@
                     </div>
 
                     <!-- Card 2 -->
-                    <div class="bg-obsidian-900 rounded-2xl overflow-hidden border border-obsidian-800 hover:border-gold transition-all group">
+                    <div data-blur-reveal class="bg-obsidian-900 rounded-2xl overflow-hidden border border-obsidian-800 hover:border-gold transition-all group">
                         <div class="h-64 bg-obsidian-800 relative overflow-hidden">
                             <img src="/images/aolc-worship.jpg" alt="Worship Leader" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 grayscale group-hover:grayscale-0">
                         </div>
@@ -361,21 +361,21 @@
 
                 <div class="grid grid-cols-2 sm:grid-cols-3 gap-6">
                     <!-- Color 1 -->
-                    <div class="bg-obsidian-950 p-5 rounded-2xl border border-obsidian-800 flex flex-col items-center">
+                    <div data-blur-reveal class="bg-obsidian-950 p-5 rounded-2xl border border-obsidian-800 flex flex-col items-center">
                         <div class="w-14 h-14 rounded-full bg-[#FFFD74] border-2 border-slate-100 shadow-md mb-3"></div>
                         <span class="font-bold text-xs text-slate-200">Butter Yellow</span>
                         <span class="text-[10px] text-slate-500 mt-1">Warna Utama</span>
                     </div>
 
                     <!-- Color 2 -->
-                    <div class="bg-obsidian-950 p-5 rounded-2xl border border-obsidian-800 flex flex-col items-center">
+                    <div data-blur-reveal class="bg-obsidian-950 p-5 rounded-2xl border border-obsidian-800 flex flex-col items-center">
                         <div class="w-14 h-14 rounded-full bg-[#FFFF00] border-2 border-slate-100 shadow-md mb-3"></div>
                         <span class="font-bold text-xs text-slate-200">Yellow</span>
                         <span class="text-[10px] text-slate-500 mt-1">Warna Lain</span>
                     </div>
 
                     <!-- Color 3 -->
-                    <div class="bg-obsidian-950 p-5 rounded-2xl border border-obsidian-800 flex flex-col items-center">
+                    <div data-blur-reveal class="bg-obsidian-950 p-5 rounded-2xl border border-obsidian-800 flex flex-col items-center">
                         <div class="w-14 h-14 rounded-full bg-[#D4AF37] border-2 border-gold shadow-md mb-3"></div>
                         <span class="font-bold text-xs text-slate-200">Gold</span>
                         <span class="text-[10px] text-slate-500 mt-1">Warna Alternatif</span>
@@ -499,7 +499,7 @@
 
 
                 <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4 text-left">
-                    <div class="bg-obsidian-950 p-5 rounded-2xl border border-obsidian-800 hover:border-gold/50 transition-all flex items-start gap-3.5">
+                    <div data-blur-reveal class="bg-obsidian-950 p-5 rounded-2xl border border-obsidian-800 hover:border-gold/50 transition-all flex items-start gap-3.5">
                         <div class="w-9 h-9 rounded-lg bg-gold/10 border border-gold/30 flex items-center justify-center text-gold shrink-0 mt-0.5">
                             <i data-lucide="star" class="w-4 h-4"></i>
                         </div>
@@ -509,7 +509,7 @@
                         </div>
                     </div>
 
-                    <div class="bg-obsidian-950 p-5 rounded-2xl border border-obsidian-800 hover:border-gold/50 transition-all flex items-start gap-3.5">
+                    <div data-blur-reveal class="bg-obsidian-950 p-5 rounded-2xl border border-obsidian-800 hover:border-gold/50 transition-all flex items-start gap-3.5">
                         <div class="w-9 h-9 rounded-lg bg-gold/10 border border-gold/30 flex items-center justify-center text-gold shrink-0 mt-0.5">
                             <i data-lucide="star" class="w-4 h-4"></i>
                         </div>
@@ -519,7 +519,7 @@
                         </div>
                     </div>
 
-                    <div class="bg-obsidian-950 p-5 rounded-2xl border border-obsidian-800 hover:border-gold/50 transition-all flex items-start gap-3.5">
+                    <div data-blur-reveal class="bg-obsidian-950 p-5 rounded-2xl border border-obsidian-800 hover:border-gold/50 transition-all flex items-start gap-3.5">
                         <div class="w-9 h-9 rounded-lg bg-gold/10 border border-gold/30 flex items-center justify-center text-gold shrink-0 mt-0.5">
                             <i data-lucide="star" class="w-4 h-4"></i>
                         </div>
@@ -529,7 +529,7 @@
                         </div>
                     </div>
 
-                    <div class="bg-obsidian-950 p-5 rounded-2xl border border-obsidian-800 hover:border-gold/50 transition-all flex items-start gap-3.5">
+                    <div data-blur-reveal class="bg-obsidian-950 p-5 rounded-2xl border border-obsidian-800 hover:border-gold/50 transition-all flex items-start gap-3.5">
                         <div class="w-9 h-9 rounded-lg bg-gold/10 border border-gold/30 flex items-center justify-center text-gold shrink-0 mt-0.5">
                             <i data-lucide="star" class="w-4 h-4"></i>
                         </div>
@@ -539,7 +539,7 @@
                         </div>
                     </div>
 
-                    <div class="bg-obsidian-950 p-5 rounded-2xl border border-obsidian-800 hover:border-gold/50 transition-all flex items-start gap-3.5">
+                    <div data-blur-reveal class="bg-obsidian-950 p-5 rounded-2xl border border-obsidian-800 hover:border-gold/50 transition-all flex items-start gap-3.5">
                         <div class="w-9 h-9 rounded-lg bg-gold/10 border border-gold/30 flex items-center justify-center text-gold shrink-0 mt-0.5">
                             <i data-lucide="star" class="w-4 h-4"></i>
                         </div>
@@ -549,7 +549,7 @@
                         </div>
                     </div>
 
-                    <div class="bg-obsidian-950 p-5 rounded-2xl border border-obsidian-800 hover:border-gold/50 transition-all flex items-start gap-3.5">
+                    <div data-blur-reveal class="bg-obsidian-950 p-5 rounded-2xl border border-obsidian-800 hover:border-gold/50 transition-all flex items-start gap-3.5">
                         <div class="w-9 h-9 rounded-lg bg-gold/10 border border-gold/30 flex items-center justify-center text-gold shrink-0 mt-0.5">
                             <i data-lucide="star" class="w-4 h-4"></i>
                         </div>
@@ -559,7 +559,7 @@
                         </div>
                     </div>
 
-                    <div class="bg-obsidian-950 p-5 rounded-2xl border border-obsidian-800 hover:border-gold/50 transition-all flex items-start gap-3.5">
+                    <div data-blur-reveal class="bg-obsidian-950 p-5 rounded-2xl border border-obsidian-800 hover:border-gold/50 transition-all flex items-start gap-3.5">
                         <div class="w-9 h-9 rounded-lg bg-gold/10 border border-gold/30 flex items-center justify-center text-gold shrink-0 mt-0.5">
                             <i data-lucide="star" class="w-4 h-4"></i>
                         </div>
