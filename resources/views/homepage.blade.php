@@ -55,16 +55,27 @@
         <!-- Top Navigation Bar -->
         <nav class="fixed top-0 left-0 w-full z-40 bg-obsidian-950/90 backdrop-blur-md border-b border-obsidian-700/60 transition-all">
             <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-20 sm:h-24 flex items-center justify-between">
-                <a href="#" class="flex items-center gap-2.5 group py-4 sm">
-                    {{-- <div class="w-9 h-9 rounded-lg bg-gold flex items-center justify-center text-obsidian-950 font-black">
-                        <i data-lucide="sparkle" class="w-5 h-5 fill-current"></i>
-                    </div> --}}
-                    <img src="/images/aolc_logo.webp" class="w-[140px] h-[70px] sm:w-[210px] sm:h-[80px] object-contain" />
-                    {{-- <span class="font-heading font-extrabold tracking-wider text-base sm:text-lg text-slate-100 group-hover:text-gold transition-colors">
-                        AOLC <span class="text-gold">CIRARAB</span>
-                    </span> --}}
-                </a>
-
+                <div class="flex">
+                    <a href="https://www.instagram.com/gbicirarab/" class="flex items-center gap-2.5 group py-4 sm">
+                        {{-- <div class="w-9 h-9 rounded-lg bg-gold flex items-center justify-center text-obsidian-950 font-black">
+                            <i data-lucide="sparkle" class="w-5 h-5 fill-current"></i>
+                        </div> --}}
+                        <img src="/images/gbi.webp" class="w-[50px] h-[50px] sm:w-[60px] sm:h-[60px] object-contain" />
+                        {{-- <span class="font-heading font-extrabold tracking-wider text-base sm:text-lg text-slate-100 group-hover:text-gold transition-colors">
+                            AOLC <span class="text-gold">CIRARAB</span>
+                        </span> --}}
+                    </a>
+                    <a href="https://www.instagram.com/arrowoflight.cirarab/" class="flex items-center gap-2.5 group py-4 sm">
+                        {{-- <div class="w-9 h-9 rounded-lg bg-gold flex items-center justify-center text-obsidian-950 font-black">
+                            <i data-lucide="sparkle" class="w-5 h-5 fill-current"></i>
+                        </div> --}}
+                        <img src="/images/aolc_logo.webp" class="w-[140px] h-[70px] sm:w-[210px] sm:h-[80px] object-contain" />
+                        {{-- <span class="font-heading font-extrabold tracking-wider text-base sm:text-lg text-slate-100 group-hover:text-gold transition-colors">
+                            AOLC <span class="text-gold">CIRARAB</span>
+                        </span> --}}
+                    </a>
+                </div>
+                
                 <!-- Navigation Links -->
                 <div class="hidden md:flex items-center space-x-8 text-xs font-semibold uppercase tracking-widest text-slate-300">
                     <a href="#about" class="hover:text-gold transition-colors">Tentang</a>
