@@ -174,4 +174,46 @@ if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
         });
     });
 
+
+    const welcomeModal = document.querySelector("#welcome-modal");
+    const enterButton = document.querySelector("#enter-website");
+    const music = document.querySelector("#bg-music");
+
+    if (welcomeModal && enterButton) {
+        // Kunci scroll ketika modal muncul
+        document.body.classList.add("modal-open");
+
+        enterButton.addEventListener("click", async () => {
+            // Mulai musik dari interaksi pengguna
+            if (music) {
+                music.volume = 0.3;
+
+                try {
+                    await music.play();
+                } catch (error) {
+                    console.error("Musik gagal diputar:", error);
+                }
+            }
+
+            // Animasi tombol
+            gsap.to(enterButton, {
+                scale: 0.9,
+                opacity: 0,
+                duration: 0.2,
+            });
+
+            // Animasi modal keluar
+            gsap.to(welcomeModal, {
+                opacity: 0,
+                duration: 1,
+                delay: 0.2,
+                ease: "power2.inOut",
+                onComplete: () => {
+                    welcomeModal.remove();
+                    // Aktifkan kembali scroll
+                    document.body.classList.remove("modal-open");
+                },
+            });
+        });
+    }
 }

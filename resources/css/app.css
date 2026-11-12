@@ -70,3 +70,8 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+body.modal-open {
+    overflow: hidden;
+    height: 100vh;
+}

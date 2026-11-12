@@ -677,6 +677,48 @@
             </div>
         </div>
 
+        {{-- Modal --}}
+        <!-- Welcome Modal -->
+        <div
+            id="welcome-modal"
+            class="fixed inset-0 z-[9999] flex items-center justify-center
+                bg-[#111111] text-white"
+        >
+            <div class="relative z-10 mx-6 max-w-lg text-center">
+
+                <p class="mb-4 text-sm uppercase tracking-[0.4em] text-amber-400">
+                    AOLC CIRARAB MENGUNDANG
+                </p>
+
+                <h1 class="mb-4 font-serif text-4xl font-bold md:text-6xl">
+                    Mari Merayakan Kasih Kristus Bersama
+                </h1>
+
+                <p class="mb-8 text-sm leading-relaxed text-gray-300 md:text-base">
+                    Bersukacita dalam kelahiran Yesus Kristus, Sang Juruselamat, dan membagikan kasih-Nya kepada sesama.
+                    Celebrate the true meaning of Christmas with us.
+                </p>
+
+                <button
+                    id="enter-website"
+                    class="rounded-full bg-amber-500 px-8 py-3
+                        text-sm font-semibold uppercase tracking-widest
+                        text-black transition hover:bg-amber-400
+                        hover:scale-105"
+                >
+                    Enter Website
+                </button>
+
+                <p class="mt-4 text-xs text-gray-500">
+                    Click to enter with music
+                </p>
+            </div>
+        </div>
+
+        <audio id="bg-music" loop preload="auto">
+            <source src="{{ asset('audio/bg-song.mp3') }}" type="audio/mpeg">
+        </audio>
+
         <!-- JAVASCRIPT CODE -->
         <script>
             // Mobile Menu Toggle
