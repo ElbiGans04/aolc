@@ -548,7 +548,7 @@
                         </div>
                     </div>
 
-                    <div data-blur-reveal class="bg-obsidian-950 p-5 rounded-2xl border border-obsidian-800 hover:border-gold/50 transition-all flex items-start gap-3.5">
+                    {{-- <div data-blur-reveal class="bg-obsidian-950 p-5 rounded-2xl border border-obsidian-800 hover:border-gold/50 transition-all flex items-start gap-3.5">
                         <div class="w-9 h-9 rounded-lg bg-gold/10 border border-gold/30 flex items-center justify-center text-gold shrink-0 mt-0.5">
                             <i data-lucide="star" class="w-4 h-4"></i>
                         </div>
@@ -556,7 +556,7 @@
                             <span class="text-[10px] font-bold text-gold uppercase tracking-wider block">Youth & Teens</span>
                             <h4 class="font-heading font-bold text-slate-100 text-sm mt-0.5">GBI Cibunar</h4>
                         </div>
-                    </div>
+                    </div> --}}
 
                     <div data-blur-reveal class="bg-obsidian-950 p-5 rounded-2xl border border-obsidian-800 hover:border-gold/50 transition-all flex items-start gap-3.5">
                         <div class="w-9 h-9 rounded-lg bg-gold/10 border border-gold/30 flex items-center justify-center text-gold shrink-0 mt-0.5">
@@ -686,15 +686,15 @@
         >
             <div class="relative z-10 mx-6 max-w-lg text-center">
 
-                <p class="mb-4 text-sm uppercase tracking-[0.4em] text-amber-400">
+                <p class="mb-4 text-sm uppercase tracking-[0.4em] font-heading text-amber-400">
                     AOLC CIRARAB MENGUNDANG
                 </p>
 
-                <h1 class="mb-4 font-serif text-4xl font-bold md:text-6xl">
+                <h1 class="mb-4 text-4xl font-heading font-bold md:text-6xl">
                     Mari Merayakan Kasih Kristus Bersama
                 </h1>
 
-                <p class="mb-8 text-sm leading-relaxed text-gray-300 md:text-base">
+                <p class="mb-8 text-sm leading-relaxed font-heading text-gray-300 md:text-base">
                     Bersukacita dalam kelahiran Yesus Kristus, Sang Juruselamat, dan membagikan kasih-Nya kepada sesama.
                     Celebrate the true meaning of Christmas with us.
                 </p>
