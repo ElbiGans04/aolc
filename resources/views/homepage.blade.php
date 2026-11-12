@@ -69,20 +69,20 @@
                 <div class="hidden md:flex items-center space-x-8 text-xs font-semibold uppercase tracking-widest text-slate-300">
                     <a href="#about" class="hover:text-gold transition-colors">Tentang</a>
                     <a href="#details" class="hover:text-gold transition-colors">Lokasi</a>
-                    <a href="#schedule" class="hover:text-gold transition-colors">Rundown</a>
                     <a href="#lineup" class="hover:text-gold transition-colors">Lineup</a>
                     <a href="#dresscode" class="hover:text-gold transition-colors">Dresscode</a>
+                    <a href="#turut-mengundang" class="hover:text-gold transition-colors">Turut Mengundang</a>
                 </div>
 
                 <!-- Action Buttons (Music + RSVP CTA) -->
                 <div class="flex items-center gap-3">
-                    <button id="musicToggle" class="p-2.5 rounded-full bg-obsidian-800 border border-gold/30 text-gold hover:bg-gold hover:text-obsidian-950 transition-all" title="Toggle Ambient Music">
+                    {{-- <button id="musicToggle" class="p-2.5 rounded-full bg-obsidian-800 border border-gold/30 text-gold hover:bg-gold hover:text-obsidian-950 transition-all" title="Toggle Ambient Music">
                         <i data-lucide="music" class="w-4 h-4"></i>
-                    </button>
+                    </button> --}}
 
-                    <a href="#rsvp" class="btn-gold px-5 py-2.5 rounded-lg text-xs font-bold uppercase tracking-wider hidden sm:inline-block">
+                    {{-- <a href="#rsvp" class="btn-gold px-5 py-2.5 rounded-lg text-xs font-bold uppercase tracking-wider hidden sm:inline-block">
                         Konfirmasi
-                    </a>
+                    </a> --}}
 
                     <button id="mobileMenuBtn" class="md:hidden p-2 text-slate-300 hover:text-gold">
                         <i data-lucide="menu" class="w-6 h-6"></i>
@@ -94,15 +94,14 @@
             <div id="mobileMenu" class="hidden md:hidden bg-obsidian-900 border-b border-obsidian-800 px-6 py-4 space-y-3 text-sm">
                 <a href="#about" class="block text-slate-300 hover:text-gold">Tentang</a>
                 <a href="#details" class="block text-slate-300 hover:text-gold">Waktu & Tempat</a>
-                <a href="#schedule" class="block text-slate-300 hover:text-gold">Rundown Acara</a>
                 <a href="#lineup" class="block text-slate-300 hover:text-gold">Pembicara & Guest Star</a>
                 <a href="#dresscode" class="block text-slate-300 hover:text-gold">Dress Code</a>
-                <a href="#rsvp" class="block w-full text-center btn-gold py-2.5 rounded-lg font-bold">Konfirmasi Sekarang</a>
+                <a href="#turut-mengundang" class="block w-full text-center btn-gold py-2.5 rounded-lg font-bold">Turut Mengundang</a>
             </div>
         </nav>
 
         <!-- HERO SECTION -->
-        <section class="relative min-h-screen flex items-center justify-center pt-28 pb-16 px-4 bg-obsidian-950">
+        <section id="about" class="relative min-h-screen flex items-center justify-center pt-28 pb-16 px-4 bg-obsidian-950">
             <!-- Minimal Grid Pattern Background -->
             <div class="absolute inset-0 bg-[linear-gradient(to_right,#1a1d27_1px,transparent_1px),linear-gradient(to_bottom,#1a1d27_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)] opacity-30"></div>
 
@@ -430,7 +429,7 @@
         </section>
 
         <!-- RSVP FORM SECTION -->
-        <section id="rsvp" class="py-24 px-4 bg-obsidian-950">
+        {{-- <section id="rsvp" class="py-24 px-4 bg-obsidian-950">
             <div class="max-w-3xl mx-auto bg-obsidian-900 p-8 sm:p-12 rounded-3xl border border-gold/30">
                 <div class="text-center mb-10">
                     <span class="text-gold text-xs font-bold uppercase tracking-widest">Konfirmasi Kehadiran</span>
@@ -488,7 +487,7 @@
                     </button>
                 </form>
             </div>
-        </section>
+        </section> --}}
 
          <!-- TURUT MENGUNDANG SECTION -->
         <section id="turut-mengundang" class="py-20 px-4 bg-obsidian-900 border-t border-obsidian-800">
