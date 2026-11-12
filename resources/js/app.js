@@ -1,12 +1,14 @@
 import { createIcons, icons } from 'lucide';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 
 createIcons({
     icons,
 });
 
 gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollToPlugin);
 
 // Respect accessibility preferences
 if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
@@ -145,5 +147,31 @@ if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
 
         typeNext();
     }
+
+
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+            const targetId = this.getAttribute("href");
+
+            if (!targetId || targetId === "#") return;
+
+            const target = document.querySelector(targetId);
+
+            if (!target) return;
+
+            e.preventDefault();
+
+            gsap.to(window, {
+                duration: 1.2,
+                scrollTo: {
+                    y: target,
+                    offsetY: 80,
+                },
+                ease: "power3.inOut",
+            });
+
+            history.pushState(null, "", targetId);
+        });
+    });
 
 }
