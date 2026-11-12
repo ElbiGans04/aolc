@@ -112,7 +112,7 @@
         </nav>
 
         <!-- HERO SECTION -->
-        <section id="about" class="relative min-h-screen flex items-center justify-center pt-28 pb-16 px-4 bg-obsidian-950">
+        <section id="about" class="relative isolate overflow-hidden min-h-screen flex items-center justify-center pt-28 pb-16 px-4 bg-obsidian-950">
             <!-- Minimal Grid Pattern Background -->
             <div class="absolute inset-0 bg-[linear-gradient(to_right,#1a1d27_1px,transparent_1px),linear-gradient(to_bottom,#1a1d27_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_60%_50%_at_50%_50%,#000_70%,transparent_100%)] opacity-30"></div>
 
@@ -140,9 +140,9 @@
                 </p>
 
                 <div data-blur-reveal class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                    <a href="#rsvp" class="w-full sm:w-auto btn-gold px-8 py-4 rounded-xl font-extrabold text-sm uppercase tracking-wider flex items-center justify-center gap-2">
+                    {{-- <a href="#rsvp" class="w-full sm:w-auto btn-gold px-8 py-4 rounded-xl font-extrabold text-sm uppercase tracking-wider flex items-center justify-center gap-2">
                         <i data-lucide="ticket" class="w-4 h-4"></i> Konfirmasi Kehadiran
-                    </a>
+                    </a> --}}
                     <a href="#details" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-obsidian-900 border border-obsidian-700 text-slate-200 font-bold text-sm hover:border-gold transition-all flex items-center justify-center gap-2">
                         <i data-lucide="map-pin" class="w-4 h-4 text-gold"></i> Detail Acara
                     </a>
@@ -559,15 +559,15 @@
                         </div>
                     </div>
 
-                    {{-- <div data-blur-reveal class="bg-obsidian-950 p-5 rounded-2xl border border-obsidian-800 hover:border-gold/50 transition-all flex items-start gap-3.5">
+                    <div data-blur-reveal class="bg-obsidian-950 p-5 rounded-2xl border border-obsidian-800 hover:border-gold/50 transition-all flex items-start gap-3.5">
                         <div class="w-9 h-9 rounded-lg bg-gold/10 border border-gold/30 flex items-center justify-center text-gold shrink-0 mt-0.5">
                             <i data-lucide="star" class="w-4 h-4"></i>
                         </div>
                         <div>
                             <span class="text-[10px] font-bold text-gold uppercase tracking-wider block">Youth & Teens</span>
-                            <h4 class="font-heading font-bold text-slate-100 text-sm mt-0.5">GBI Cibunar</h4>
+                            <h4 class="font-heading font-bold text-slate-100 text-sm mt-0.5">GBI Milenium City</h4>
                         </div>
-                    </div> --}}
+                    </div>
 
                     <div data-blur-reveal class="bg-obsidian-950 p-5 rounded-2xl border border-obsidian-800 hover:border-gold/50 transition-all flex items-start gap-3.5">
                         <div class="w-9 h-9 rounded-lg bg-gold/10 border border-gold/30 flex items-center justify-center text-gold shrink-0 mt-0.5">
