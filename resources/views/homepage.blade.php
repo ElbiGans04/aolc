@@ -1,10 +1,43 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
+        <!-- Basic -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>{{ config('app.name', 'Laravel') }}</title>
+        <title>AOLC Cirarab Christmas {{ date('Y') }} | Elbiworks</title>
+
+        <meta name="description" content="Celebrate the true meaning of Christmas with AOLC! Join us in a celebration filled with joy, love, hope, and togetherness.">
+
+        <meta name="robots" content="index, follow">
+        <meta name="theme-color" content="#111111">
+
+        <!-- Icons -->
+        <link rel="icon" type="image/png" href="{{ asset('favicon.png') }}">
+        <link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
+        <link rel="apple-touch-icon" href="{{ asset('apple-touch-icon.png') }}">
+
+        <!-- Canonical -->
+        <link rel="canonical" href="{{ url()->current() }}">
+
+        <!-- Open Graph -->
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="AOLC Cirarab">
+        <meta property="og:locale" content="id_ID">
+        <meta property="og:title" content="AOLC Cirarab Christmas {{ date('Y') }}">
+        <meta property="og:description" content="Celebrate the true meaning of Christmas with AOLC! Join us in a celebration filled with joy, love, hope, and togetherness.">
+        <meta property="og:url" content="{{ url()->current() }}">
+        <meta property="og:image" content="{{ asset('images/og-image.webp') }}">
+        <meta property="og:image:alt" content="AOLC Cirarab Christmas Celebration">
+        <meta property="og:image:width" content="1200">
+        <meta property="og:image:height" content="630">
+
+        <!-- Twitter / X -->
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:title" content="AOLC Cirarab Christmas {{ date('Y') }}">
+        <meta name="twitter:description" content="Celebrate the true meaning of Christmas with AOLC!">
+        <meta name="twitter:image" content="{{ asset('images/og-image.webp') }}">
+        <meta name="twitter:image:alt" content="AOLC Cirarab Christmas Celebration">
 
         @fonts
 
@@ -21,14 +54,15 @@
 
         <!-- Top Navigation Bar -->
         <nav class="fixed top-0 left-0 w-full z-40 bg-obsidian-950/90 backdrop-blur-md border-b border-obsidian-700/60 transition-all">
-            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-                <a href="#" class="flex items-center gap-2.5 group">
-                    <div class="w-9 h-9 rounded-lg bg-gold flex items-center justify-center text-obsidian-950 font-black">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-20 sm:h-24 flex items-center justify-between">
+                <a href="#" class="flex items-center gap-2.5 group py-4 sm">
+                    {{-- <div class="w-9 h-9 rounded-lg bg-gold flex items-center justify-center text-obsidian-950 font-black">
                         <i data-lucide="sparkle" class="w-5 h-5 fill-current"></i>
-                    </div>
-                    <span class="font-heading font-extrabold tracking-wider text-base sm:text-lg text-slate-100 group-hover:text-gold transition-colors">
+                    </div> --}}
+                    <img src="/images/aolc_logo.webp" class="w-[140px] h-[70px] sm:w-[210px] sm:h-[80px] object-contain" />
+                    {{-- <span class="font-heading font-extrabold tracking-wider text-base sm:text-lg text-slate-100 group-hover:text-gold transition-colors">
                         AOLC <span class="text-gold">CIRARAB</span>
-                    </span>
+                    </span> --}}
                 </a>
 
                 <!-- Navigation Links -->
@@ -660,7 +694,6 @@
             function updateCountdown() {
                 const now = new Date().getTime();
                 const diff = targetEventDate - now;
-                console.log("Hello World")
 
                 if (diff > 0) {
                     const days = Math.floor(diff / (1000 * 60 * 60 * 24));
