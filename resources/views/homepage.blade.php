@@ -334,7 +334,7 @@
                     <!-- Card 2 -->
                     <div data-blur-reveal class="bg-obsidian-900 rounded-2xl overflow-hidden border border-obsidian-800 hover:border-gold transition-all group">
                         <div class="h-64 bg-obsidian-800 relative overflow-hidden">
-                            <img src="/images/aolc-worship.jpg" alt="Worship Leader" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 grayscale group-hover:grayscale-0">
+                            <img src="/images/aolc-worship.jpg" alt="Worship Leader" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 grayscale group-hover:grayscale-0 object-top">
                         </div>
                         <div class="p-6">
                             <span class="text-[10px] font-bold text-obsidian-950 bg-gold px-2.5 py-1 rounded-md uppercase tracking-wider">Worship Team</span>
@@ -359,7 +359,7 @@
         </section>
 
         <!-- DRESS CODE SECTION WITH SOLID COLOR SWATCHES -->
-        <section id="dresscode" class="py-20 px-4 bg-obsidian-900 border-y border-obsidian-800">
+        {{-- <section id="dresscode" class="py-20 px-4 bg-obsidian-900 border-y border-obsidian-800">
             <div class="max-w-4xl mx-auto text-center">
                 <span class="text-gold text-xs font-bold uppercase tracking-widest">Panduan Busana</span>
                 <h2 class="font-heading font-black text-3xl sm:text-4xl text-slate-100 uppercase mt-2">Dress Code</h2>
@@ -392,11 +392,94 @@
                     </div>
 
                     <!-- Color 4 -->
-                    {{-- <div class="bg-obsidian-950 p-5 rounded-2xl border border-obsidian-800 flex flex-col items-center">
+                    <div class="bg-obsidian-950 p-5 rounded-2xl border border-obsidian-800 flex flex-col items-center">
                         <div class="w-14 h-14 rounded-full bg-[#12141C] border-2 border-gold shadow-md mb-3"></div>
                         <span class="font-bold text-xs text-slate-200">Obsidian Black</span>
                         <span class="text-[10px] text-slate-500 mt-1">Netral Gelap</span>
-                    </div> --}}
+                    </div>
+                </div>
+            </div>
+        </section> --}}
+
+        <!-- DRESS CODE SECTION: UNIFIED 4-COLOR SWATCH PALETTE -->
+        <section id="dresscode" class="py-20 px-4 bg-obsidian-900 border-y border-obsidian-800">
+            <div class="max-w-4xl mx-auto text-center">
+                <span class="text-gold text-xs font-bold uppercase tracking-widest">Panduan Busana</span>
+                <h2 class="font-heading font-black text-3xl sm:text-4xl text-slate-100 uppercase mt-2">Color Palette</h2>
+                <div class="w-12 h-1 bg-gold mx-auto mt-4 mb-6"></div>
+
+                <p class="text-slate-300 text-sm max-w-xl mx-auto mb-10">
+                    Padupadankan outfit terbaikmu menggunakan salah satu atau kombinasi dari warna Shades Of Yellow:
+                </p>
+
+                <!-- Unified Color Palette Card -->
+                <div class="bg-obsidian-950 rounded-3xl border border-obsidian-800 overflow-hidden shadow-xl max-w-3xl mx-auto">
+                    <!-- 4-Color Swatch Bar -->
+                    <div class="grid grid-cols-2 sm:grid-cols-5">
+                        <!-- Swatch 1: Solid Warm Gold -->
+                        <div class="group flex flex-col">
+                            <div class="h-28 sm:h-36 w-full bg-[#F9F7DC] transition-all duration-300 group-hover:brightness-105 flex items-end justify-between p-3">
+                                <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-obsidian-950/80 text-gold">01</span>
+                            </div>
+                            <div class="p-4 text-left border-b sm:border-b-0 sm:border-r border-obsidian-800">
+                                {{-- <span class="font-heading font-bold text-xs sm:text-sm text-slate-100 block">Solid Warm Gold</span> --}}
+                                <span class="font-mono text-[11px] text-gold mt-0.5 block">#F9F7DC</span>
+                            </div>
+                        </div>
+
+                        <!-- Swatch 2: Matte Amber -->
+                        <div class="group flex flex-col">
+                            <div class="h-28 sm:h-36 w-full bg-[#F7EE9E] transition-all duration-300 group-hover:brightness-105 flex items-end justify-between p-3">
+                                <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-obsidian-950/80 text-gold">02</span>
+                            </div>
+                            <div class="p-4 text-left border-b sm:border-b-0 sm:border-r border-obsidian-800">
+                                {{-- <span class="font-heading font-bold text-xs sm:text-sm text-slate-100 block">Matte Amber</span> --}}
+                                <span class="font-mono text-[11px] text-gold mt-0.5 block">#F7EE9E</span>
+                            </div>
+                        </div>
+
+                        <!-- Swatch 3: Clean Ivory White -->
+                        <div class="group flex flex-col">
+                            <div class="h-28 sm:h-36 w-full bg-[#F8E66B] transition-all duration-300 group-hover:brightness-105 flex items-end justify-between p-3">
+                                <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-obsidian-950/80 text-slate-100">03</span>
+                            </div>
+                            <div class="p-4 text-left border-r border-obsidian-800">
+                                {{-- <span class="font-heading font-bold text-xs sm:text-sm text-slate-100 block">Clean Ivory White</span> --}}
+                                <span class="font-mono text-[11px] text-slate-400 mt-0.5 block">#F8E66B</span>
+                            </div>
+                        </div>
+
+                        <!-- Swatch 4: Obsidian Black -->
+                        <div class="group flex flex-col">
+                            <div class="h-28 sm:h-36 w-full bg-[#F7DC28] border-b border-obsidian-800/80 transition-all duration-300 group-hover:brightness-110 flex items-end justify-between p-3">
+                                <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-obsidian-900 border border-obsidian-700 text-slate-300">04</span>
+                            </div>
+                            <div class="p-4 text-left">
+                                {{-- <span class="font-heading font-bold text-xs sm:text-sm text-slate-100 block">Obsidian Black</span> --}}
+                                <span class="font-mono text-[11px] text-slate-400 mt-0.5 block">#F7DC28</span>
+                            </div>
+                        </div>
+
+                        <!-- Swatch 5: Obsidian Black -->
+                        <div class="group flex flex-col">
+                            <div class="h-28 sm:h-36 w-full bg-[#FDD800] border-b border-obsidian-800/80 transition-all duration-300 group-hover:brightness-110 flex items-end justify-between p-3">
+                                <span class="text-[10px] font-bold uppercase tracking-wider px-2 py-0.5 rounded bg-obsidian-900 border border-obsidian-700 text-slate-300">05</span>
+                            </div>
+                            <div class="p-4 text-left">
+                                {{-- <span class="font-heading font-bold text-xs sm:text-sm text-slate-100 block">Obsidian Black</span> --}}
+                                <span class="font-mono text-[11px] text-slate-400 mt-0.5 block">#FDD800</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Unified Styling Note Footer -->
+                    <div class="bg-obsidian-900/70 border-t border-obsidian-800 px-6 py-4 flex flex-col sm:flex-row items-center justify-center gap-2 text-xs text-slate-300">
+                        <div class="flex items-center gap-2 text-gold font-bold uppercase tracking-wider">
+                            <i data-lucide="shirt" class="w-4 h-4"></i>
+                            <span>Style Note:</span>
+                        </div>
+                        <span>Smart Casual / Semi-Formal Youth Outfit (Rapi, Nyaman & Modis)</span>
+                    </div>
                 </div>
             </div>
         </section>
@@ -509,7 +592,7 @@
 
 
                 <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4 text-left">
-                    <div data-blur-reveal class="bg-obsidian-950 p-5 rounded-2xl border border-obsidian-800 hover:border-gold/50 transition-all flex items-start gap-3.5">
+                    {{-- <div data-blur-reveal class="bg-obsidian-950 p-5 rounded-2xl border border-obsidian-800 hover:border-gold/50 transition-all flex items-start gap-3.5">
                         <div class="w-9 h-9 rounded-lg bg-gold/10 border border-gold/30 flex items-center justify-center text-gold shrink-0 mt-0.5">
                             <i data-lucide="star" class="w-4 h-4"></i>
                         </div>
@@ -517,7 +600,7 @@
                             <span class="text-[10px] font-bold text-gold uppercase tracking-wider block">Youth & Teens</span>
                             <h4 class="font-heading font-bold text-slate-100 text-sm mt-0.5">GBI Cirarab</h4>
                         </div>
-                    </div>
+                    </div> --}}
 
                     <div data-blur-reveal class="bg-obsidian-950 p-5 rounded-2xl border border-obsidian-800 hover:border-gold/50 transition-all flex items-start gap-3.5">
                         <div class="w-9 h-9 rounded-lg bg-gold/10 border border-gold/30 flex items-center justify-center text-gold shrink-0 mt-0.5">
@@ -647,6 +730,48 @@
             </div>
         </section>
 
+        <!-- COMMUNITY PHOTO GALLERY SECTION (DITAMBAHKAN DI PALING BAWAH SEBELUM FOOTER) -->
+<!-- COMMUNITY PHOTO GALLERY SECTION (1.5 KOLOM, AUTO-SLIDE & LIGHTBOX ZOOM) -->
+        <section class="py-20 px-4 bg-obsidian-950 border-t border-obsidian-800 overflow-hidden">
+            <div class="max-w-6xl mx-auto">
+                <div class="text-center mb-12">
+                    <span class="text-gold text-xs font-bold uppercase tracking-widest">Dokumentasi</span>
+                    <h2 class="font-heading font-black text-2xl sm:text-3xl text-slate-100 uppercase mt-2">Galeri Komunitas</h2>
+                    <div class="w-12 h-1 bg-gold mx-auto mt-4"></div>
+                </div>
+
+                <!-- Carousel 1.5 Column Wrapper -->
+                <div class="relative">
+                    <div id="communityCarousel" class="flex gap-6 overflow-x-auto no-scrollbar snap-x snap-mandatory scroll-smooth pb-4 px-2">
+                        <!-- Slide 1 -->
+                        <div class="min-w-[85%] sm:min-w-[65%] lg:min-w-[48%] snap-start aspect-video rounded-2xl overflow-hidden border border-obsidian-800 bg-obsidian-900 group cursor-pointer shadow-lg" onclick="openLightbox('/images/carousel/1.webp')">
+                            <img src="/images/carousel/1.webp" alt="Gallery 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="min-w-[85%] sm:min-w-[65%] lg:min-w-[48%] snap-start aspect-video rounded-2xl overflow-hidden border border-obsidian-800 bg-obsidian-900 group cursor-pointer shadow-lg" onclick="openLightbox('/images/carousel/2.webp')">
+                            <img src="/images/carousel/2.webp" alt="Gallery 2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <!-- Slide 3 -->
+                        <div class="min-w-[85%] sm:min-w-[65%] lg:min-w-[48%] snap-start aspect-video rounded-2xl overflow-hidden border border-obsidian-800 bg-obsidian-900 group cursor-pointer shadow-lg" onclick="openLightbox('/images/carousel/3.webp')">
+                            <img src="/images/carousel/3.webp" alt="Gallery 3" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <!-- Slide 4 -->
+                        <div class="min-w-[85%] sm:min-w-[65%] lg:min-w-[48%] snap-start aspect-video rounded-2xl overflow-hidden border border-obsidian-800 bg-obsidian-900 group cursor-pointer shadow-lg" onclick="openLightbox('/images/carousel/4.webp')">
+                            <img src="/images/carousel/4.webp" alt="Gallery 4" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                                                <!-- Slide 1 -->
+                        <div class="min-w-[85%] sm:min-w-[65%] lg:min-w-[48%] snap-start aspect-video rounded-2xl overflow-hidden border border-obsidian-800 bg-obsidian-900 group cursor-pointer shadow-lg" onclick="openLightbox('/images/carousel/1.webp')">
+                            <img src="/images/carousel/1.webp" alt="Gallery 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <!-- Slide 2 -->
+                        <div class="min-w-[85%] sm:min-w-[65%] lg:min-w-[48%] snap-start aspect-video rounded-2xl overflow-hidden border border-obsidian-800 bg-obsidian-900 group cursor-pointer shadow-lg" onclick="openLightbox('/images/carousel/2.webp')">
+                            <img src="/images/carousel/2.webp" alt="Gallery 2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- LARAVEL BLADE INTEGRATION CODE MODAL / HELPER -->
         {{-- <section class="py-12 px-4 bg-obsidian-900 border-t border-obsidian-800">
             <div class="max-w-4xl mx-auto text-center">
@@ -717,12 +842,22 @@
                         text-black transition hover:bg-amber-400
                         hover:scale-105"
                 >
-                    Enter Website
+                    Buka Undangan
                 </button>
 
                 <p class="mt-4 text-xs text-gray-500">
                     Click to enter with music
                 </p>
+            </div>
+        </div>
+
+        <!-- LIGHTBOX MODAL UNTUK ZOOM FOTO -->
+        <div id="lightboxModal" class="fixed inset-0 z-50 bg-black/90 hidden flex items-center justify-center p-4">
+            <button onclick="closeLightbox()" class="absolute top-6 right-6 text-white text-3xl hover:text-gold z-50 focus:outline-none">
+                <i data-lucide="x" class="w-8 h-8"></i>
+            </button>
+            <div class="relative max-w-5xl w-full max-h-[90vh] flex items-center justify-center overflow-hidden">
+                <img id="lightboxImg" src="" alt="Zoomed Photo" class="max-h-[85vh] max-w-full object-contain rounded-xl transition-transform duration-300 scale-100 cursor-zoom-in shadow-2xl" onclick="toggleZoom(this)">
             </div>
         </div>
 
@@ -768,35 +903,84 @@
             setInterval(updateCountdown, 1000);
             updateCountdown();
 
-            // Audio Ambient Sound Simulator Toggle
-            let isPlaying = false;
-            const musicToggle = document.getElementById('musicToggle');
+            // // Audio Ambient Sound Simulator Toggle
+            // let isPlaying = false;
+            // const musicToggle = document.getElementById('musicToggle');
             
-            musicToggle.addEventListener('click', () => {
-                isPlaying = !isPlaying;
-                if (isPlaying) {
-                    musicToggle.classList.add('bg-gold', 'text-obsidian-950');
-                    musicToggle.classList.remove('bg-obsidian-800', 'text-gold');
-                    console.log("Playing ambient Christmas music...");
-                } else {
-                    musicToggle.classList.remove('bg-gold', 'text-obsidian-950');
-                    musicToggle.classList.add('bg-obsidian-800', 'text-gold');
-                    console.log("Paused ambient Christmas music.");
+            // musicToggle.addEventListener('click', () => {
+            //     isPlaying = !isPlaying;
+            //     if (isPlaying) {
+            //         musicToggle.classList.add('bg-gold', 'text-obsidian-950');
+            //         musicToggle.classList.remove('bg-obsidian-800', 'text-gold');
+            //         console.log("Playing ambient Christmas music...");
+            //     } else {
+            //         musicToggle.classList.remove('bg-gold', 'text-obsidian-950');
+            //         musicToggle.classList.add('bg-obsidian-800', 'text-gold');
+            //         console.log("Paused ambient Christmas music.");
+            //     }
+            // });
+
+            // // Form Submit & Modal
+            // const rsvpForm = document.getElementById('rsvpForm');
+            // const rsvpModal = document.getElementById('rsvpModal');
+
+            // rsvpForm.addEventListener('submit', (e) => {
+            //     e.preventDefault();
+            //     rsvpModal.classList.remove('hidden');
+            //     rsvpForm.reset();
+            // });
+
+            // function closeRsvpModal() {
+            //     rsvpModal.classList.add('hidden');
+            // }
+
+            // Carousel
+            // Auto-Slide Carousel 1.5 Kolom
+            const carousel = document.getElementById('communityCarousel');
+            let autoSlide = setInterval(() => {
+                if (carousel) {
+                    if (carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth - 10) {
+                        carousel.scrollTo({ left: 0, behavior: 'smooth' });
+                    } else {
+                        carousel.scrollBy({ left: carousel.clientWidth * 0.6, behavior: 'smooth' });
+                    }
                 }
+            }, 3500);
+
+            // Pause auto-slide on hover/touch
+            carousel.addEventListener('mouseenter', () => clearInterval(autoSlide));
+            carousel.addEventListener('mouseleave', () => {
+                autoSlide = setInterval(() => {
+                    if (carousel.scrollLeft + carousel.clientWidth >= carousel.scrollWidth - 10) {
+                        carousel.scrollTo({ left: 0, behavior: 'smooth' });
+                    } else {
+                        carousel.scrollBy({ left: carousel.clientWidth * 0.6, behavior: 'smooth' });
+                    }
+                }, 3500);
             });
 
-            // Form Submit & Modal
-            const rsvpForm = document.getElementById('rsvpForm');
-            const rsvpModal = document.getElementById('rsvpModal');
+            // Lightbox Zoom Functions
+            function openLightbox(src) {
+                const modal = document.getElementById('lightboxModal');
+                const img = document.getElementById('lightboxImg');
+                img.src = src;
+                img.classList.remove('scale-150');
+                img.style.cursor = 'zoom-in';
+                modal.classList.remove('hidden');
+            }
 
-            rsvpForm.addEventListener('submit', (e) => {
-                e.preventDefault();
-                rsvpModal.classList.remove('hidden');
-                rsvpForm.reset();
-            });
+            function closeLightbox() {
+                document.getElementById('lightboxModal').classList.add('hidden');
+            }
 
-            function closeRsvpModal() {
-                rsvpModal.classList.add('hidden');
+            function toggleZoom(img) {
+                if (img.classList.contains('scale-150')) {
+                    img.classList.remove('scale-150');
+                    img.style.cursor = 'zoom-in';
+                } else {
+                    img.classList.add('scale-150');
+                    img.style.cursor = 'zoom-out';
+                }
             }
         </script>
     </body>
