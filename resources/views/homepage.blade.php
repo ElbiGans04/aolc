@@ -41,6 +41,9 @@
 
         @fonts
 
+        <!-- QRCode.js for Dynamic Google Form QR Generation -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
         <!-- Styles / Scripts -->
         @if (file_exists(public_path('build/manifest.json')) || file_exists(public_path('hot')))
             @vite(['resources/css/app.css', 'resources/js/app.js'])
@@ -91,9 +94,9 @@
                         <i data-lucide="music" class="w-4 h-4"></i>
                     </button> --}}
 
-                    {{-- <a href="#rsvp" class="btn-gold px-5 py-2.5 rounded-lg text-xs font-bold uppercase tracking-wider hidden sm:inline-block">
-                        Konfirmasi
-                    </a> --}}
+                    <a href="#rsvp" class="btn-gold px-5 py-2.5 rounded-lg text-xs font-bold uppercase tracking-wider hidden sm:inline-block">
+                        Daftar Sekarang
+                    </a>
 
                     <button id="mobileMenuBtn" class="md:hidden p-2 text-slate-300 hover:text-gold">
                         <i data-lucide="menu" class="w-6 h-6"></i>
@@ -107,7 +110,8 @@
                 <a href="#details" class="block text-slate-300 hover:text-gold">Waktu & Tempat</a>
                 <a href="#lineup" class="block text-slate-300 hover:text-gold">Pembicara & Guest Star</a>
                 <a href="#dresscode" class="block text-slate-300 hover:text-gold">Dress Code</a>
-                <a href="#turut-mengundang" class="block w-full text-center btn-gold py-2.5 rounded-lg font-bold">Turut Mengundang</a>
+                <a href="#turut-mengundang" class="block text-slate-300 hover:text-gold">Turut Mengundang</a>
+                <a href="#rsvp" class="block w-full text-center btn-gold py-2.5 rounded-lg font-bold">Daftar Sekarang</a>
             </div>
         </nav>
 
@@ -140,9 +144,9 @@
                 </p>
 
                 <div data-blur-reveal class="flex flex-col sm:flex-row items-center justify-center gap-4">
-                    {{-- <a href="#rsvp" class="w-full sm:w-auto btn-gold px-8 py-4 rounded-xl font-extrabold text-sm uppercase tracking-wider flex items-center justify-center gap-2">
-                        <i data-lucide="ticket" class="w-4 h-4"></i> Konfirmasi Kehadiran
-                    </a> --}}
+                    <a href="#rsvp" class="w-full sm:w-auto btn-gold px-8 py-4 rounded-xl font-extrabold text-sm uppercase tracking-wider flex items-center justify-center gap-2">
+                        <i data-lucide="ticket" class="w-4 h-4"></i> Daftar Sekarang
+                    </a>
                     <a href="#details" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-obsidian-900 border border-obsidian-700 text-slate-200 font-bold text-sm hover:border-gold transition-all flex items-center justify-center gap-2">
                         <i data-lucide="map-pin" class="w-4 h-4 text-gold"></i> Detail Acara
                     </a>
@@ -484,105 +488,6 @@
             </div>
         </section>
 
-         <!-- COMMUNITY PARALLAX PHOTO SECTION -->
-        <section class="relative min-h-[480px] sm:min-h-[560px] flex items-center justify-center parallax-bg border-y border-obsidian-800 my-0">
-            <!-- Dark Gradient Overlay for High Contrast & Text Legibility -->
-            <div class="absolute inset-0 bg-gradient-to-t from-obsidian-950 via-obsidian-950/75 to-obsidian-950/80"></div>
-
-            <div class="relative z-10 max-w-4xl mx-auto px-6 text-center py-16">
-                <!-- Community Badge -->
-                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-obsidian-950/90 border border-gold text-gold text-xs font-bold uppercase tracking-widest mb-6 backdrop-blur-md">
-                    <i data-lucide="users" class="w-4 h-4"></i>
-                    <span>Youth Community & Fellowship</span>
-                </div>
-
-                <!-- Big Impact Quote -->
-                <h2 class="font-heading font-black text-3xl sm:text-5xl lg:text-6xl text-slate-100 uppercase tracking-tight leading-tight mb-6">
-                    We Are One Family <br>
-                    <span class="text-gold font-serif italic font-normal capitalize">Glorifying God Together</span>
-                </h2>
-
-                <div class="w-16 h-1 bg-gold mx-auto mb-6"></div>
-
-                <p class="max-w-2xl mx-auto text-slate-300 text-sm sm:text-base font-normal leading-relaxed mb-8">
-                    Natal bukan sekadar selebrasi tahunan, melainkan momen kita bersatu sebagai satu generasi muda yang berdampak dan memancarkan terang Kasih Kristus.
-                </p>
-
-                <div class="flex flex-wrap items-center justify-center gap-6 text-xs sm:text-sm font-semibold text-slate-300">
-                    <span class="flex items-center gap-2 bg-obsidian-900/80 px-4 py-2 rounded-xl border border-obsidian-700 backdrop-blur-sm">
-                        <i data-lucide="heart" class="w-4 h-4 text-gold"></i> Authentic Fellowship
-                    </span>
-                    <span class="flex items-center gap-2 bg-obsidian-900/80 px-4 py-2 rounded-xl border border-obsidian-700 backdrop-blur-sm">
-                        <i data-lucide="sparkles" class="w-4 h-4 text-gold"></i> Impactful Ministry
-                    </span>
-                    <span class="flex items-center gap-2 bg-obsidian-900/80 px-4 py-2 rounded-xl border border-obsidian-700 backdrop-blur-sm">
-                        <i data-lucide="smile" class="w-4 h-4 text-gold"></i> Warm Community
-                    </span>
-                </div>
-            </div>
-        </section>
-
-        <!-- RSVP FORM SECTION -->
-        {{-- <section id="rsvp" class="py-24 px-4 bg-obsidian-950">
-            <div class="max-w-3xl mx-auto bg-obsidian-900 p-8 sm:p-12 rounded-3xl border border-gold/30">
-                <div class="text-center mb-10">
-                    <span class="text-gold text-xs font-bold uppercase tracking-widest">Konfirmasi Kehadiran</span>
-                    <h2 class="font-heading font-black text-3xl sm:text-4xl text-slate-100 uppercase mt-2">RSVP Online</h2>
-                    <p class="text-slate-400 text-xs sm:text-sm mt-2">Mohon konfirmasi sebelum 12 Desember 2026 untuk konsumsi & kursi.</p>
-                </div>
-
-                <!-- Form Blade Ready -->
-                <form id="rsvpForm" action="#" method="POST" class="space-y-6">
-                    <!-- Directives for Laravel Blade (Uncomment when using in Laravel) -->
-                    <!-- @csrf -->
-
-                    <div>
-                        <label class="block text-slate-300 text-xs font-bold uppercase tracking-wider mb-2">Nama Lengkap</label>
-                        <input type="text" id="nama" name="nama" required placeholder="Masukkan nama lengkap kamu" class="w-full px-4 py-3.5 rounded-xl bg-obsidian-950 border border-obsidian-700 text-slate-100 text-sm focus:outline-none focus:border-gold transition-all">
-                    </div>
-
-                    <div class="grid sm:grid-cols-2 gap-6">
-                        <div>
-                            <label class="block text-slate-300 text-xs font-bold uppercase tracking-wider mb-2">Nomor WhatsApp</label>
-                            <input type="tel" id="whatsapp" name="whatsapp" required placeholder="0812xxxxxxx" class="w-full px-4 py-3.5 rounded-xl bg-obsidian-950 border border-obsidian-700 text-slate-100 text-sm focus:outline-none focus:border-gold transition-all">
-                        </div>
-                        <div>
-                            <label class="block text-slate-300 text-xs font-bold uppercase tracking-wider mb-2">Gereja / Komunitas</label>
-                            <input type="text" id="gereja" name="gereja" required placeholder="Asal komsel / gereja" class="w-full px-4 py-3.5 rounded-xl bg-obsidian-950 border border-obsidian-700 text-slate-100 text-sm focus:outline-none focus:border-gold transition-all">
-                        </div>
-                    </div>
-
-                    <div class="grid sm:grid-cols-2 gap-6">
-                        <div>
-                            <label class="block text-slate-300 text-xs font-bold uppercase tracking-wider mb-2">Jumlah Kehadiran</label>
-                            <select id="jumlah" name="jumlah" class="w-full px-4 py-3.5 rounded-xl bg-obsidian-950 border border-obsidian-700 text-slate-100 text-sm focus:outline-none focus:border-gold transition-all">
-                                <option value="1">1 Orang (Sendiri)</option>
-                                <option value="2">2 Orang</option>
-                                <option value="3">3 Orang</option>
-                                <option value="4+">Rombongan Komsel (>3 Orang)</option>
-                            </select>
-                        </div>
-                        <div>
-                            <label class="block text-slate-300 text-xs font-bold uppercase tracking-wider mb-2">Status Konfirmasi</label>
-                            <select id="status" name="status" class="w-full px-4 py-3.5 rounded-xl bg-obsidian-950 border border-obsidian-700 text-slate-100 text-sm focus:outline-none focus:border-gold transition-all">
-                                <option value="Hadir">Pasti Hadir</option>
-                                <option value="Ragu">Masih Ragu-ragu</option>
-                            </select>
-                        </div>
-                    </div>
-
-                    <div>
-                        <label class="block text-slate-300 text-xs font-bold uppercase tracking-wider mb-2">Pesan / Harapan Natal</label>
-                        <textarea id="pesan" name="pesan" rows="3" placeholder="Tuliskan pesan atau doa kamu..." class="w-full px-4 py-3.5 rounded-xl bg-obsidian-950 border border-obsidian-700 text-slate-100 text-sm focus:outline-none focus:border-gold transition-all"></textarea>
-                    </div>
-
-                    <button type="submit" class="w-full btn-gold py-4 rounded-xl font-extrabold text-sm uppercase tracking-wider flex items-center justify-center gap-2">
-                        <i data-lucide="send" class="w-4 h-4"></i> Kirim Konfirmasi RSVP
-                    </button>
-                </form>
-            </div>
-        </section> --}}
-
          <!-- TURUT MENGUNDANG SECTION -->
         <section id="turut-mengundang" class="py-20 px-4 bg-obsidian-900 border-t border-obsidian-800">
             <div class="max-w-4xl mx-auto text-center">
@@ -730,42 +635,178 @@
             </div>
         </section>
 
+        <!-- COMMUNITY PARALLAX PHOTO SECTION -->
+        <section class="relative min-h-[480px] sm:min-h-[560px] flex items-center justify-center parallax-bg border-y border-obsidian-800 my-0">
+            <!-- Dark Gradient Overlay for High Contrast & Text Legibility -->
+            <div class="absolute inset-0 bg-gradient-to-t from-obsidian-950 via-obsidian-950/75 to-obsidian-950/80"></div>
+
+            <div class="relative z-10 max-w-4xl mx-auto px-6 text-center py-16">
+                <!-- Community Badge -->
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-obsidian-950/90 border border-gold text-gold text-xs font-bold uppercase tracking-widest mb-6 backdrop-blur-md">
+                    <i data-lucide="users" class="w-4 h-4"></i>
+                    <span>Youth Community & Fellowship</span>
+                </div>
+
+                <!-- Big Impact Quote -->
+                <h2 class="font-heading font-black text-3xl sm:text-5xl lg:text-6xl text-slate-100 uppercase tracking-tight leading-tight mb-6">
+                    We Are One Family <br>
+                    <span class="text-gold font-serif italic font-normal capitalize">Glorifying God Together</span>
+                </h2>
+
+                <div class="w-16 h-1 bg-gold mx-auto mb-6"></div>
+
+                <p class="max-w-2xl mx-auto text-slate-300 text-sm sm:text-base font-normal leading-relaxed mb-8">
+                    Natal bukan sekadar selebrasi tahunan, melainkan momen kita bersatu sebagai satu generasi muda yang berdampak dan memancarkan terang Kasih Kristus.
+                </p>
+
+                <div class="flex flex-wrap items-center justify-center gap-6 text-xs sm:text-sm font-semibold text-slate-300">
+                    <span class="flex items-center gap-2 bg-obsidian-900/80 px-4 py-2 rounded-xl border border-obsidian-700 backdrop-blur-sm">
+                        <i data-lucide="heart" class="w-4 h-4 text-gold"></i> Authentic Fellowship
+                    </span>
+                    <span class="flex items-center gap-2 bg-obsidian-900/80 px-4 py-2 rounded-xl border border-obsidian-700 backdrop-blur-sm">
+                        <i data-lucide="sparkles" class="w-4 h-4 text-gold"></i> Impactful Ministry
+                    </span>
+                    <span class="flex items-center gap-2 bg-obsidian-900/80 px-4 py-2 rounded-xl border border-obsidian-700 backdrop-blur-sm">
+                        <i data-lucide="smile" class="w-4 h-4 text-gold"></i> Warm Community
+                    </span>
+                </div>
+            </div>
+        </section>
+
         <!-- COMMUNITY PHOTO GALLERY SECTION (DITAMBAHKAN DI PALING BAWAH SEBELUM FOOTER) -->
-<!-- COMMUNITY PHOTO GALLERY SECTION (1.5 KOLOM, AUTO-SLIDE & LIGHTBOX ZOOM) -->
+        <!-- COMMUNITY PHOTO GALLERY SECTION (1.5 KOLOM, AUTO-SLIDE & LIGHTBOX ZOOM) -->
         <section class="py-20 px-4 bg-obsidian-950 border-t border-obsidian-800 overflow-hidden">
             <div class="max-w-6xl mx-auto">
                 <div class="text-center mb-12">
-                    <span class="text-gold text-xs font-bold uppercase tracking-widest">Dokumentasi</span>
-                    <h2 class="font-heading font-black text-2xl sm:text-3xl text-slate-100 uppercase mt-2">Galeri Komunitas</h2>
+                    <span class="text-gold text-xs font-bold uppercase tracking-widest">DOCUMENTATION</span>
+                    <h2 class="font-heading font-black text-2xl sm:text-3xl text-slate-100 uppercase mt-2">OUR CHRISTMAS JOURNEY</h2>
                     <div class="w-12 h-1 bg-gold mx-auto mt-4"></div>
                 </div>
 
                 <!-- Carousel 1.5 Column Wrapper -->
                 <div class="relative">
                     <div id="communityCarousel" class="flex gap-6 overflow-x-auto no-scrollbar snap-x snap-mandatory scroll-smooth pb-4 px-2">
+                        <!-- Slide 2 -->
+                        <div class="min-w-[85%] sm:min-w-[65%] lg:min-w-[48%] snap-start aspect-video rounded-2xl overflow-hidden border border-obsidian-800 bg-obsidian-900 group cursor-pointer shadow-lg" onclick="openLightbox('/images/carousel/IMG_6161.webp')">
+                            <img src="/images/carousel/IMG_6161.webp" alt="Gallery 2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
                         <!-- Slide 1 -->
-                        <div class="min-w-[85%] sm:min-w-[65%] lg:min-w-[48%] snap-start aspect-video rounded-2xl overflow-hidden border border-obsidian-800 bg-obsidian-900 group cursor-pointer shadow-lg" onclick="openLightbox('/images/carousel/1.webp')">
-                            <img src="/images/carousel/1.webp" alt="Gallery 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="min-w-[85%] sm:min-w-[65%] lg:min-w-[48%] snap-start aspect-video rounded-2xl overflow-hidden border border-obsidian-800 bg-obsidian-900 group cursor-pointer shadow-lg" onclick="openLightbox('/images/carousel/IMG_6160.JPG.webp')">
+                            <img src="/images/carousel/IMG_6160.JPG.webp" alt="Gallery 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <div class="min-w-[85%] sm:min-w-[65%] lg:min-w-[48%] snap-start aspect-video rounded-2xl overflow-hidden border border-obsidian-800 bg-obsidian-900 group cursor-pointer shadow-lg" onclick="openLightbox('/images/carousel/IMG_6159.webp')">
+                            <img src="/images/carousel/IMG_6159.webp" alt="Gallery 4" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        </div>
+                        <!-- Slide 1 -->
+                        <div class="min-w-[85%] sm:min-w-[65%] lg:min-w-[48%] snap-start aspect-video rounded-2xl overflow-hidden border border-obsidian-800 bg-obsidian-900 group cursor-pointer shadow-lg" onclick="openLightbox('/images/carousel/IMG_6156.webp')">
+                            <img src="/images/carousel/IMG_6156.webp" alt="Gallery 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                         </div>
                         <!-- Slide 2 -->
-                        <div class="min-w-[85%] sm:min-w-[65%] lg:min-w-[48%] snap-start aspect-video rounded-2xl overflow-hidden border border-obsidian-800 bg-obsidian-900 group cursor-pointer shadow-lg" onclick="openLightbox('/images/carousel/2.webp')">
-                            <img src="/images/carousel/2.webp" alt="Gallery 2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="min-w-[85%] sm:min-w-[65%] lg:min-w-[48%] snap-start aspect-video rounded-2xl overflow-hidden border border-obsidian-800 bg-obsidian-900 group cursor-pointer shadow-lg" onclick="openLightbox('/images/carousel/IMG_6157.webp')">
+                            <img src="/images/carousel/IMG_6157.webp" alt="Gallery 2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                         </div>
                         <!-- Slide 3 -->
-                        <div class="min-w-[85%] sm:min-w-[65%] lg:min-w-[48%] snap-start aspect-video rounded-2xl overflow-hidden border border-obsidian-800 bg-obsidian-900 group cursor-pointer shadow-lg" onclick="openLightbox('/images/carousel/3.webp')">
-                            <img src="/images/carousel/3.webp" alt="Gallery 3" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                        <div class="min-w-[85%] sm:min-w-[65%] lg:min-w-[48%] snap-start aspect-video rounded-2xl overflow-hidden border border-obsidian-800 bg-obsidian-900 group cursor-pointer shadow-lg" onclick="openLightbox('/images/carousel/IMG_6158.webp')">
+                            <img src="/images/carousel/IMG_6158.webp" alt="Gallery 3" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                         </div>
                         <!-- Slide 4 -->
-                        <div class="min-w-[85%] sm:min-w-[65%] lg:min-w-[48%] snap-start aspect-video rounded-2xl overflow-hidden border border-obsidian-800 bg-obsidian-900 group cursor-pointer shadow-lg" onclick="openLightbox('/images/carousel/4.webp')">
-                            <img src="/images/carousel/4.webp" alt="Gallery 4" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- RSVP FORM SECTION -->
+        <!-- RESERVATION / RSVP SECTION (GOOGLE FORM LINK + SYNCED QR CODE) -->
+        @php
+            $rsvpFormUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSdHCaV3pvk391ZXPpdvRGuSgubva8zwDKpWImxAvTuqswkVkA/viewform';
+        @endphp
+        <section id="rsvp" class="py-24 px-4 bg-obsidian-950 border-b border-obsidian-800 relative">
+            <div class="max-w-5xl mx-auto">
+                <div class="text-center mb-14">
+                    <span class="text-gold text-xs font-bold uppercase tracking-widest">Konfirmasi Kehadiran</span>
+                    <h2 class="font-heading font-black text-3xl sm:text-4xl text-slate-100 uppercase mt-2">Reservasi Tempat</h2>
+                    <div class="w-12 h-1 bg-gold mx-auto mt-4 mb-5"></div>
+                    <p class="text-slate-300 text-sm sm:text-base max-w-xl mx-auto leading-relaxed">
+                        Pastikan kehadiranmu di perayaan Natal Youth AOLC Cirarab 2026 dengan mengisi formulir registrasi online atau memindai QR Code di bawah ini.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-5 gap-6 sm:gap-8 items-stretch">
+                    <!-- Left Column: Direct Google Form CTA Card -->
+                    <div class="md:col-span-3 bg-obsidian-900 p-7 sm:p-10 rounded-3xl border border-obsidian-800 hover:border-gold/50 transition-all flex flex-col justify-between shadow-2xl">
+                        <div>
+                            <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-gold/10 border border-gold/30 text-gold text-xs font-bold uppercase tracking-wider mb-6">
+                                <i data-lucide="clipboard-check" class="w-3.5 h-3.5"></i>
+                                <span>Registrasi Online</span>
+                            </div>
+
+                            <h3 class="font-heading font-black text-2xl sm:text-3xl text-slate-100 leading-snug mb-3">
+                                Daftar Melalui Google Form
+                            </h3>
+                            <p class="text-slate-300 text-sm leading-relaxed mb-6">
+                                Klik tombol di bawah untuk langsung membuka formulir pendaftaran resmi. Pengisian hanya membutuhkan waktu kurang dari 1 menit.
+                            </p>
+
+                            <ul class="space-y-3 text-xs sm:text-sm text-slate-300 mb-8">
+                                <li class="flex items-center gap-3">
+                                    <span class="w-5 h-5 rounded-full bg-gold/15 text-gold flex items-center justify-center shrink-0">
+                                        <i data-lucide="check" class="w-3.5 h-3.5"></i>
+                                    </span>
+                                    <span>Terbuka untuk seluruh Youth & Teens</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <span class="w-5 h-5 rounded-full bg-gold/15 text-gold flex items-center justify-center shrink-0">
+                                        <i data-lucide="check" class="w-3.5 h-3.5"></i>
+                                    </span>
+                                    <span>Pendataan konsumsi & tempat duduk acara</span>
+                                </li>
+                                <li class="flex items-center gap-3">
+                                    <span class="w-5 h-5 rounded-full bg-gold/15 text-gold flex items-center justify-center shrink-0">
+                                        <i data-lucide="check" class="w-3.5 h-3.5"></i>
+                                    </span>
+                                    <span>Dapat diisi secara individu maupun rombongan gereja</span>
+                                </li>
+                            </ul>
                         </div>
-                                                <!-- Slide 1 -->
-                        <div class="min-w-[85%] sm:min-w-[65%] lg:min-w-[48%] snap-start aspect-video rounded-2xl overflow-hidden border border-obsidian-800 bg-obsidian-900 group cursor-pointer shadow-lg" onclick="openLightbox('/images/carousel/1.webp')">
-                            <img src="/images/carousel/1.webp" alt="Gallery 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+
+                        <div class="space-y-3">
+                            <a id="rsvpDirectBtn" href="{{ $rsvpFormUrl }}" target="_blank" rel="noopener noreferrer"
+                               class="w-full py-4 px-6 rounded-2xl bg-gold hover:bg-amber-400 active:scale-[0.99] text-obsidian-950 font-black text-xs sm:text-sm uppercase tracking-wider transition-all flex items-center justify-center gap-2.5 shadow-lg">
+                                <span>Isi Google Form</span>
+                                <i data-lucide="external-link" class="w-4 h-4"></i>
+                            </a>
+
+                            <div class="flex items-center justify-between gap-2 bg-obsidian-950 px-4 py-2.5 rounded-xl border border-obsidian-800">
+                                <span id="rsvpUrlDisplay" class="text-xs font-mono text-slate-400 truncate">{{ $rsvpFormUrl }}</span>
+                                <button type="button" onclick="copyRsvpLink()" id="copyRsvpBtn" class="shrink-0 inline-flex items-center gap-1.5 text-xs font-bold text-gold hover:text-amber-300 transition-colors px-2 py-1">
+                                    <i data-lucide="copy" class="w-3.5 h-3.5"></i>
+                                    <span id="copyRsvpText">Salin Link</span>
+                                </button>
+                            </div>
                         </div>
-                        <!-- Slide 2 -->
-                        <div class="min-w-[85%] sm:min-w-[65%] lg:min-w-[48%] snap-start aspect-video rounded-2xl overflow-hidden border border-obsidian-800 bg-obsidian-900 group cursor-pointer shadow-lg" onclick="openLightbox('/images/carousel/2.webp')">
-                            <img src="/images/carousel/2.webp" alt="Gallery 2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                    </div>
+
+                    <!-- Right Column: High-Contrast Synced QR Code Card -->
+                    <div class="md:col-span-2 bg-obsidian-900 p-7 sm:p-8 rounded-3xl border border-obsidian-800 hover:border-gold/50 transition-all flex flex-col items-center justify-between text-center shadow-2xl">
+                        <div class="w-full">
+                            <span class="text-[11px] font-bold uppercase tracking-widest text-gold block">Scan QR Code</span>
+                            <p class="text-xs text-slate-400 mt-1">Arahkan kamera HP untuk membuka link pendaftaran</p>
+                        </div>
+
+                        <!-- High-Contrast White Frame for Reliable Scanning -->
+                        <div class="my-6 p-4 bg-white rounded-2xl border-4 border-gold shadow-xl inline-flex items-center justify-center relative group cursor-pointer" onclick="openQrModal()" title="Ketuk untuk memperbesar QR Code">
+                            <div id="rsvpQrCode" class="w-[176px] h-[176px] flex items-center justify-center"></div>
+                        </div>
+
+                        <div class="w-full grid grid-cols-2 gap-2.5">
+                            <button type="button" onclick="openQrModal()" class="py-2.5 px-3 rounded-xl bg-obsidian-950 border border-obsidian-700 hover:border-gold text-slate-200 hover:text-gold text-xs font-bold transition-all flex items-center justify-center gap-1.5">
+                                <i data-lucide="maximize-2" class="w-3.5 h-3.5 text-gold"></i>
+                                <span>Perbesar</span>
+                            </button>
+                            <button type="button" onclick="downloadQrCode()" class="py-2.5 px-3 rounded-xl bg-obsidian-950 border border-obsidian-700 hover:border-gold text-slate-200 hover:text-gold text-xs font-bold transition-all flex items-center justify-center gap-1.5">
+                                <i data-lucide="download" class="w-3.5 h-3.5 text-gold"></i>
+                                <span>Simpan QR</span>
+                            </button>
                         </div>
                     </div>
                 </div>
@@ -792,8 +833,8 @@
                     <i data-lucide="sparkle" class="w-5 h-5 text-gold fill-current"></i>
                     <span class="font-heading font-black text-lg tracking-wider text-slate-100">YOUTH CHRISTMAS AOLC CIRARAB 2026</span>
                 </div>
-                <p class="text-xs text-slate-500">Made With ❤️ By <a target="_blank" href="https://www.instagram.com/elbiworks/" class="underline hover:no-underline text-gold">Elbiworks</a></p>
-                <p class="text-[11px] text-slate-600">&copy; {{ date('Y') }} Elbiworks. All Rights Reserved.</p>
+                <p class="text-sm text-slate-500">Made With ❤️ By <a target="_blank" href="https://www.instagram.com/elbiworks/" class="underline hover:no-underline text-gold">Elbiworks</a></p>
+                <p class="text-xs text-slate-600">&copy; {{ date('Y') }} Elbiworks. All Rights Reserved.</p>
             </div>
         </footer>
 
@@ -823,7 +864,7 @@
             <div class="relative z-10 mx-6 max-w-lg text-center">
 
                 <p class="mb-4 text-sm uppercase tracking-[0.4em] font-heading text-amber-400">
-                    AOLC CIRARAB MENGUNDANG
+                    AOLC - GBI CIRARAB MENGUNDANG
                 </p>
 
                 <h1 class="mb-4 text-4xl font-heading font-bold md:text-6xl">
@@ -860,9 +901,36 @@
                 <img id="lightboxImg" src="" alt="Zoomed Photo" class="max-h-[85vh] max-w-full object-contain rounded-xl transition-transform duration-300 scale-100 cursor-zoom-in shadow-2xl" onclick="toggleZoom(this)">
             </div>
         </div>
+        
+
+         <!-- ENLARGED QR CODE MODAL -->
+        <div id="qrModal" class="fixed inset-0 bg-black/90 z-50 hidden flex items-center justify-center p-4" onclick="if(event.target === this) closeQrModal()">
+            <div class="bg-obsidian-900 border border-gold/50 rounded-3xl p-6 sm:p-8 max-w-sm w-full text-center relative shadow-2xl">
+                <button type="button" onclick="closeQrModal()" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-obsidian-800 hover:bg-gold hover:text-obsidian-950 text-slate-300 flex items-center justify-center transition-colors" aria-label="Tutup">
+                    <i data-lucide="x" class="w-5 h-5"></i>
+                </button>
+                <span class="text-[11px] font-bold uppercase tracking-widest text-gold block">AOLC Cirarab Christmas 2026</span>
+                <h3 class="font-heading font-black text-xl text-slate-100 mt-1 mb-5">Scan Untuk Reservasi</h3>
+
+                <div class="p-5 bg-white rounded-2xl border-4 border-gold inline-flex items-center justify-center shadow-xl mx-auto">
+                    <div id="rsvpQrCodeLarge" class="w-[240px] h-[240px] flex items-center justify-center"></div>
+                </div>
+
+                <p class="text-xs text-slate-400 mt-4 mb-5 break-all font-mono">{{ $rsvpFormUrl }}</p>
+
+                <div class="grid grid-cols-2 gap-3">
+                    <button type="button" onclick="downloadQrCode()" class="py-3 px-4 rounded-xl bg-gold hover:bg-amber-400 text-obsidian-950 font-extrabold text-xs uppercase tracking-wider flex items-center justify-center gap-1.5">
+                        <i data-lucide="download" class="w-4 h-4"></i> Simpan QR
+                    </button>
+                    <a href="{{ $rsvpFormUrl }}" target="_blank" rel="noopener noreferrer" class="py-3 px-4 rounded-xl bg-obsidian-800 hover:bg-obsidian-700 text-slate-100 font-bold text-xs uppercase tracking-wider flex items-center justify-center gap-1.5">
+                        <i data-lucide="external-link" class="w-4 h-4 text-gold"></i> Buka Link
+                    </a>
+                </div>
+            </div>
+        </div>
 
         <audio id="bg-music" loop preload="auto">
-            <source src="{{ asset('audio/bg-song.mp3') }}" type="audio/mpeg">
+            <source src="{{ asset('audio/bg-song-2.mpeg') }}" type="audio/mpeg">
         </audio>
 
         <!-- JAVASCRIPT CODE -->
@@ -902,6 +970,80 @@
 
             setInterval(updateCountdown, 1000);
             updateCountdown();
+
+            // Synced Google Form QR Code & Clipboard/Download Helpers
+            const rsvpFormUrl = document.getElementById('rsvpDirectBtn').getAttribute('href');
+
+            function initRsvpQrCodes() {
+                if (typeof QRCode === 'undefined') return;
+                const qrSmallEl = document.getElementById('rsvpQrCode');
+                const qrLargeEl = document.getElementById('rsvpQrCodeLarge');
+
+                if (qrSmallEl) {
+                    qrSmallEl.innerHTML = '';
+                    new QRCode(qrSmallEl, {
+                        text: rsvpFormUrl,
+                        width: 176,
+                        height: 176,
+                        colorDark: '#161618',
+                        colorLight: '#FFFFFF',
+                        correctLevel: QRCode.CorrectLevel.H
+                    });
+                }
+                if (qrLargeEl) {
+                    qrLargeEl.innerHTML = '';
+                    new QRCode(qrLargeEl, {
+                        text: rsvpFormUrl,
+                        width: 240,
+                        height: 240,
+                        colorDark: '#161618',
+                        colorLight: '#FFFFFF',
+                        correctLevel: QRCode.CorrectLevel.H
+                    });
+                }
+            }
+            initRsvpQrCodes();
+
+            function copyRsvpLink() {
+                const tempInput = document.createElement('input');
+                tempInput.value = rsvpFormUrl;
+                document.body.appendChild(tempInput);
+                tempInput.select();
+                tempInput.setSelectionRange(0, 99999);
+                document.execCommand('copy');
+                document.body.removeChild(tempInput);
+
+                const copyText = document.getElementById('copyRsvpText');
+                copyText.innerText = 'Tersalin!';
+                setTimeout(() => {
+                    copyText.innerText = 'Salin Link';
+                }, 2000);
+            }
+
+            function openQrModal() {
+                document.getElementById('qrModal').classList.remove('hidden');
+                document.body.style.overflow = 'hidden';
+            }
+
+            function closeQrModal() {
+                document.getElementById('qrModal').classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            }
+
+            function downloadQrCode() {
+                const qrCanvas = document.querySelector('#rsvpQrCodeLarge canvas') || document.querySelector('#rsvpQrCode canvas');
+                const qrImg = document.querySelector('#rsvpQrCodeLarge img') || document.querySelector('#rsvpQrCode img');
+                const link = document.createElement('a');
+                link.download = 'QR-Reservasi-AOLC-Christmas-2026.png';
+
+                if (qrCanvas) {
+                    link.href = qrCanvas.toDataURL('image/png');
+                    link.click();
+                } else if (qrImg && qrImg.src) {
+                    link.href = qrImg.src;
+                    link.click();
+                }
+            }
 
             // // Audio Ambient Sound Simulator Toggle
             // let isPlaying = false;
