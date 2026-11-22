@@ -39,10 +39,11 @@
         <meta name="twitter:image" content="{{ asset('images/og-image.webp') }}">
         <meta name="twitter:image:alt" content="AOLC Cirarab Christmas Celebration">
 
-        @fonts
-
         <!-- QRCode.js for Dynamic Google Form QR Generation -->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+
+        @fonts
+
 
         <!-- Styles / Scripts -->
         @if (file_exists(public_path('build/manifest.json')) || file_exists(public_path('hot')))
@@ -674,7 +675,6 @@
         </section>
 
         <!-- COMMUNITY PHOTO GALLERY SECTION (DITAMBAHKAN DI PALING BAWAH SEBELUM FOOTER) -->
-        <!-- COMMUNITY PHOTO GALLERY SECTION (1.5 KOLOM, AUTO-SLIDE & LIGHTBOX ZOOM) -->
         <section class="py-20 px-4 bg-obsidian-950 border-t border-obsidian-800 overflow-hidden">
             <div class="max-w-6xl mx-auto">
                 <div class="text-center mb-12">
@@ -720,8 +720,8 @@
         @php
             $rsvpFormUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSdHCaV3pvk391ZXPpdvRGuSgubva8zwDKpWImxAvTuqswkVkA/viewform';
         @endphp
-        <section id="rsvp" class="py-24 px-4 bg-obsidian-950 border-b border-obsidian-800 relative">
-            <div class="max-w-5xl mx-auto">
+        <section id="rsvp" class="py-24 px-4 bg-obsidian-950 border-b border-obsidian-800 relative max-w-100 sm:max-w-full">
+            <div class="max-w-5xl mx-auto overflow-hidden">
                 <div class="text-center mb-14">
                     <span class="text-gold text-xs font-bold uppercase tracking-widest">Konfirmasi Kehadiran</span>
                     <h2 class="font-heading font-black text-3xl sm:text-4xl text-slate-100 uppercase mt-2">Reservasi Tempat</h2>
@@ -733,14 +733,14 @@
 
                 <div class="grid md:grid-cols-5 gap-6 sm:gap-8 items-stretch">
                     <!-- Left Column: Direct Google Form CTA Card -->
-                    <div class="md:col-span-3 bg-obsidian-900 p-7 sm:p-10 rounded-3xl border border-obsidian-800 hover:border-gold/50 transition-all flex flex-col justify-between shadow-2xl">
+                    <div class="md:col-span-3 max-w-100 bg-obsidian-900 p-7 sm:p-10 rounded-3xl border border-obsidian-800 hover:border-gold/50 transition-all flex flex-col justify-between shadow-2xl">
                         <div>
                             <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-gold/10 border border-gold/30 text-gold text-xs font-bold uppercase tracking-wider mb-6">
                                 <i data-lucide="clipboard-check" class="w-3.5 h-3.5"></i>
                                 <span>Registrasi Online</span>
                             </div>
 
-                            <h3 class="font-heading font-black text-2xl sm:text-3xl text-slate-100 leading-snug mb-3">
+                            <h3 class="font-heading font-black text-2xl sm:text-3xl text-xl text-slate-100 leading-snug mb-3">
                                 Daftar Melalui Google Form
                             </h3>
                             <p class="text-slate-300 text-sm leading-relaxed mb-6">
