@@ -315,7 +315,7 @@
                     <!-- Card 1 -->
                     <div data-blur-reveal class="bg-obsidian-900 rounded-2xl overflow-hidden border border-obsidian-800 hover:border-gold transition-all group">
                         <div class="h-64 bg-obsidian-800 relative overflow-hidden">
-                            <img src="/images/pdt-pardjo.webp" alt="Speaker" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 grayscale group-hover:grayscale-0">
+                            <img loading="lazy" decoding="async" src="/images/pdt-pardjo.webp" alt="Speaker" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 grayscale group-hover:grayscale-0">
                         </div>
                         <div class="p-6">
                             <span class="text-[10px] font-bold text-obsidian-950 bg-gold px-2.5 py-1 rounded-md uppercase tracking-wider">Main Speaker</span>
@@ -327,7 +327,7 @@
                     <!-- Card 1 -->
                     <div data-blur-reveal class="bg-obsidian-900 rounded-2xl overflow-hidden border border-obsidian-800 hover:border-gold transition-all group">
                         <div class="h-64 bg-obsidian-800 relative overflow-hidden">
-                            <img src="/images/pdt-tedi.jpg" alt="Speaker" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 grayscale group-hover:grayscale-0">
+                            <img loading="lazy" decoding="async" src="/images/pdt-tedi.jpg" alt="Speaker" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 grayscale group-hover:grayscale-0">
                         </div>
                         <div class="p-6">
                             <span class="text-[10px] font-bold text-obsidian-950 bg-gold px-2.5 py-1 rounded-md uppercase tracking-wider">Main Speaker</span>
@@ -339,7 +339,7 @@
                     <!-- Card 2 -->
                     <div data-blur-reveal class="bg-obsidian-900 rounded-2xl overflow-hidden border border-obsidian-800 hover:border-gold transition-all group">
                         <div class="h-64 bg-obsidian-800 relative overflow-hidden">
-                            <img src="/images/aolc-worship.jpg" alt="Worship Leader" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 grayscale group-hover:grayscale-0 object-top">
+                            <img loading="lazy" decoding="async" src="/images/aolc-worship.jpg" alt="Worship Leader" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 grayscale group-hover:grayscale-0 object-top">
                         </div>
                         <div class="p-6">
                             <span class="text-[10px] font-bold text-obsidian-950 bg-gold px-2.5 py-1 rounded-md uppercase tracking-wider">Worship Team</span>
@@ -788,28 +788,28 @@
         <div class="gallery-wrap">
             <div class="gallery gallery--bento gallery--switch" id="gallery-8">
                 <div class="gallery__item">
-                <img src="/images/carousel/IMG_6161.webp" alt="" />
+                <img loading="lazy" decoding="async" src="/images/carousel/IMG_6161.webp" alt="" />
                 </div>
                 <div class="gallery__item">
-                <img src="/images/carousel/IMG_6160.JPG.webp" alt="" />
+                <img loading="lazy" decoding="async" src="/images/carousel/IMG_6160.JPG.webp" alt="" />
                 </div>
                 <div class="gallery__item">
-                <img src="/images/carousel/IMG_6157.webp" alt="" />
+                <img loading="lazy" decoding="async" src="/images/carousel/IMG_6157.webp" alt="" />
                 </div>
                 <div class="gallery__item">
-                <img src="/images/carousel/IMG_6159.webp" alt="" />
+                <img loading="lazy" decoding="async" src="/images/carousel/IMG_6159.webp" alt="" />
                 </div>
                 <div class="gallery__item">
-                <img src="/images/carousel/IMG_6156.webp" alt="" />
+                <img loading="lazy" decoding="async" src="/images/carousel/IMG_6156.webp" alt="" />
                 </div>
                 <div class="gallery__item">
-                <img src="/images/aolc.webp" alt="" />
+                <img loading="lazy" decoding="async" src="/images/aolc.webp" alt="" />
                 </div>
                 <div class="gallery__item">
-                <img src="/images/carousel/IMG_6158.webp" alt="" />
+                <img loading="lazy" decoding="async" src="/images/carousel/IMG_6158.webp" alt="" />
                 </div>
                 <div class="gallery__item">
-                <img src="/images/pdt-pardjo.webp" alt="" />
+                <img loading="lazy" decoding="async" src="/images/pdt-pardjo.webp" alt="" />
                 </div>
 
             </div>
@@ -862,26 +862,29 @@
                     <div id="communityCarousel" class="flex gap-6 overflow-x-auto no-scrollbar snap-x snap-mandatory scroll-smooth pb-4 px-2">
                         <!-- Slide 2 -->
                         <div class="min-w-[85%] sm:min-w-[65%] lg:min-w-[48%] snap-start aspect-video rounded-2xl overflow-hidden border border-obsidian-800 bg-obsidian-900 group cursor-pointer shadow-lg" onclick="openLightbox('/images/carousel/IMG_6161.webp')">
-                            <img src="/images/carousel/IMG_6161.webp" alt="Gallery 2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <img  
+                                loading="lazy"
+                                decoding="async" 
+                                src="/images/carousel/IMG_6161.webp" alt="Gallery 2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                         </div>
                         <!-- Slide 1 -->
                         <div class="min-w-[85%] sm:min-w-[65%] lg:min-w-[48%] snap-start aspect-video rounded-2xl overflow-hidden border border-obsidian-800 bg-obsidian-900 group cursor-pointer shadow-lg" onclick="openLightbox('/images/carousel/IMG_6160.JPG.webp')">
-                            <img src="/images/carousel/IMG_6160.JPG.webp" alt="Gallery 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <img  loading="lazy" decoding="async" src="/images/carousel/IMG_6160.JPG.webp" alt="Gallery 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                         </div>
                         <div class="min-w-[85%] sm:min-w-[65%] lg:min-w-[48%] snap-start aspect-video rounded-2xl overflow-hidden border border-obsidian-800 bg-obsidian-900 group cursor-pointer shadow-lg" onclick="openLightbox('/images/carousel/IMG_6159.webp')">
-                            <img src="/images/carousel/IMG_6159.webp" alt="Gallery 4" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <img loading="lazy" decoding="async" src="/images/carousel/IMG_6159.webp" alt="Gallery 4" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                         </div>
                         <!-- Slide 1 -->
                         <div class="min-w-[85%] sm:min-w-[65%] lg:min-w-[48%] snap-start aspect-video rounded-2xl overflow-hidden border border-obsidian-800 bg-obsidian-900 group cursor-pointer shadow-lg" onclick="openLightbox('/images/carousel/IMG_6156.webp')">
-                            <img src="/images/carousel/IMG_6156.webp" alt="Gallery 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <img  loading="lazy" decoding="async" src="/images/carousel/IMG_6156.webp" alt="Gallery 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                         </div>
                         <!-- Slide 2 -->
                         <div class="min-w-[85%] sm:min-w-[65%] lg:min-w-[48%] snap-start aspect-video rounded-2xl overflow-hidden border border-obsidian-800 bg-obsidian-900 group cursor-pointer shadow-lg" onclick="openLightbox('/images/carousel/IMG_6157.webp')">
-                            <img src="/images/carousel/IMG_6157.webp" alt="Gallery 2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <img  loading="lazy" decoding="async" src="/images/carousel/IMG_6157.webp" alt="Gallery 2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                         </div>
                         <!-- Slide 3 -->
                         <div class="min-w-[85%] sm:min-w-[65%] lg:min-w-[48%] snap-start aspect-video rounded-2xl overflow-hidden border border-obsidian-800 bg-obsidian-900 group cursor-pointer shadow-lg" onclick="openLightbox('/images/carousel/IMG_6158.webp')">
-                            <img src="/images/carousel/IMG_6158.webp" alt="Gallery 3" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <img  loading="lazy" decoding="async" src="/images/carousel/IMG_6158.webp" alt="Gallery 3" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                         </div>
                         <!-- Slide 4 -->
                     </div>
