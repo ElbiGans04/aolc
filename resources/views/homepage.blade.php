@@ -126,10 +126,10 @@
                 <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-obsidian-900 border border-gold/40 text-gold text-xs font-medium uppercase tracking-widest mb-8">
                     <i data-lucide="star" class="w-3.5 h-3.5 fill-current"></i>
                 
-                    <p>
+                    {{-- <p>
                         Undangan Spesial Untuk:
-                    </p>
-                    {{-- <span>Undangan Spesial Untuk: <strong>{{ $guestName ?? 'Sahabat Youth' }}</strong></span> --}}
+                    </p> --}}
+                    <span>Undangan Spesial Untuk: <strong>{{ $finalName }}</strong></span>
                 </div>
 
                 <h1 class="font-heading font-black text-4xl sm:text-6xl lg:text-7xl uppercase tracking-tight text-slate-100 leading-none mb-6">
@@ -863,18 +863,56 @@
         >
             <div class="relative z-10 mx-6 max-w-lg text-center">
 
-                <p class="mb-4 text-sm uppercase tracking-[0.4em] font-heading text-amber-400">
-                    AOLC - GBI CIRARAB MENGUNDANG
-                </p>
+                @if (!is_null($guessName))
+                    <!-- Organizer -->
+                    <p class="mb-6 text-sm uppercase tracking-[0.4em]
+                        font-heading text-amber-400">
+                        AOLC — GBI CIRARAB
+                    </p>
 
-                <h1 class="mb-4 text-4xl font-heading font-bold md:text-6xl">
-                    Mari Merayakan Kasih Kristus Bersama
-                </h1>
+                    <!-- Invitation -->
+                    <h2 class="mb-4 text-3xl md:text-4xl
+                        font-heading font-bold text-amber-400">
+                        You're Invited
+                    </h2>
 
-                <p class="mb-8 text-sm leading-relaxed font-heading text-gray-300 md:text-base">
-                    Bersukacita dalam kelahiran Yesus Kristus, Sang Juruselamat, dan membagikan kasih-Nya kepada sesama.
-                    Celebrate the true meaning of Christmas with us.
-                </p>
+                    <!-- Guest -->
+                    <p class="mb-2 text-sm text-gray-400 font-heading">
+                        Kepada keluarga besar
+                    </p>
+
+                    <h3 class="mb-6 text-2xl md:text-3xl
+                        font-heading font-bold text-white">
+                        {{ $finalName }}
+                    </h3>
+
+                    <!-- Christmas Theme -->
+                    <h1 class="mb-4 text-4xl md:text-5xl
+                        font-heading font-bold text-amber-400">
+                        The Joy of Christmas
+                    </h1>
+
+                    <!-- Description -->
+                    <p class="mx-auto mb-8 max-w-md
+                        text-sm leading-relaxed
+                        font-heading text-gray-300">
+                        Merayakan kasih dan sukacita
+                        dalam kelahiran Kristus.
+                    </p>
+                @else
+                    <p class="mb-4 text-sm uppercase tracking-[0.4em] font-heading text-amber-400">
+                        AOLC - GBI CIRARAB MENGUNDANG
+                    </p>
+
+                    <h1 class="mb-4 text-4xl font-heading font-bold md:text-6xl">
+                        Mari Merayakan Kasih Kristus Bersama
+                    </h1>
+
+                    <p class="mb-8 text-sm leading-relaxed font-heading text-gray-300 md:text-base">
+                        Bersukacita dalam kelahiran Yesus Kristus, Sang Juruselamat, dan membagikan kasih-Nya kepada sesama.
+                        Celebrate the true meaning of Christmas with us.
+                    </p>
+                @endif
 
                 <button
                     id="enter-website"
