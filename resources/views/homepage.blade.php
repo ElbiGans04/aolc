@@ -785,7 +785,7 @@
             </div>
         </section> --}}
 
-        <div class="gallery-wrap">
+        {{-- <div class="gallery-wrap">
             <div class="gallery gallery--bento gallery--switch" id="gallery-8">
                 <div class="gallery__item">
                 <img loading="lazy" decoding="async" src="/images/carousel/IMG_6161.webp" alt="" />
@@ -846,7 +846,7 @@
                         </span>
                     </div>
                 </div>
-            </div>
+            </div> --}}
 
         <!-- COMMUNITY PHOTO GALLERY SECTION (DITAMBAHKAN DI PALING BAWAH SEBELUM FOOTER) -->
         <section class="py-20 px-4 bg-obsidian-950 border-t border-obsidian-800 overflow-hidden">
@@ -862,10 +862,7 @@
                     <div id="communityCarousel" class="flex gap-6 overflow-x-auto no-scrollbar snap-x snap-mandatory scroll-smooth pb-4 px-2">
                         <!-- Slide 2 -->
                         <div class="min-w-[85%] sm:min-w-[65%] lg:min-w-[48%] snap-start aspect-video rounded-2xl overflow-hidden border border-obsidian-800 bg-obsidian-900 group cursor-pointer shadow-lg" onclick="openLightbox('/images/carousel/IMG_6161.webp')">
-                            <img  
-                                loading="lazy"
-                                decoding="async" 
-                                src="/images/carousel/IMG_6161.webp" alt="Gallery 2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+                            <img loading="lazy" decoding="async" src="/images/carousel/IMG_6161.webp" alt="Gallery 2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                         </div>
                         <!-- Slide 1 -->
                         <div class="min-w-[85%] sm:min-w-[65%] lg:min-w-[48%] snap-start aspect-video rounded-2xl overflow-hidden border border-obsidian-800 bg-obsidian-900 group cursor-pointer shadow-lg" onclick="openLightbox('/images/carousel/IMG_6160.JPG.webp')">
@@ -888,6 +885,43 @@
                         </div>
                         <!-- Slide 4 -->
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="relative min-h-[480px] sm:min-h-[560px] flex items-center justify-center parallax-bg border-y border-obsidian-800 my-0">
+            <!-- Dark Gradient Overlay for High Contrast & Text Legibility -->
+            <div class="absolute inset-0 bg-gradient-to-t from-obsidian-950 via-obsidian-950/75 to-obsidian-950/80"></div>
+
+            <div class="relative z-10 max-w-4xl mx-auto px-6 text-center py-16">
+                <!-- Community Badge -->
+                <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-obsidian-950/90 border border-gold text-gold text-xs font-bold uppercase tracking-widest mb-6 backdrop-blur-md">
+                    <i data-lucide="users" class="w-4 h-4"></i>
+                    <span>Youth Community & Fellowship</span>
+                </div>
+
+                <!-- Big Impact Quote -->
+                <h2 class="font-heading font-black text-3xl sm:text-5xl lg:text-6xl text-slate-100 uppercase tracking-tight leading-tight mb-6">
+                    We Are One Family <br>
+                    <span class="text-gold font-serif italic font-normal capitalize">Glorifying God Together</span>
+                </h2>
+
+                <div class="w-16 h-1 bg-gold mx-auto mb-6"></div>
+
+                <p class="max-w-2xl mx-auto text-slate-300 text-sm sm:text-base font-normal leading-relaxed mb-8">
+                    Natal bukan sekadar selebrasi tahunan, melainkan momen kita bersatu sebagai satu generasi muda yang berdampak dan memancarkan terang Kasih Kristus.
+                </p>
+
+                <div class="flex flex-wrap items-center justify-center gap-6 text-xs sm:text-sm font-semibold text-slate-300">
+                    <span class="flex items-center gap-2 bg-obsidian-900/80 px-4 py-2 rounded-xl border border-obsidian-700 backdrop-blur-sm">
+                        <i data-lucide="heart" class="w-4 h-4 text-gold"></i> Authentic Fellowship
+                    </span>
+                    <span class="flex items-center gap-2 bg-obsidian-900/80 px-4 py-2 rounded-xl border border-obsidian-700 backdrop-blur-sm">
+                        <i data-lucide="sparkles" class="w-4 h-4 text-gold"></i> Impactful Ministry
+                    </span>
+                    <span class="flex items-center gap-2 bg-obsidian-900/80 px-4 py-2 rounded-xl border border-obsidian-700 backdrop-blur-sm">
+                        <i data-lucide="smile" class="w-4 h-4 text-gold"></i> Warm Community
+                    </span>
                 </div>
             </div>
         </section>
