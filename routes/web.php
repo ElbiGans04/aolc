@@ -39,5 +39,16 @@ Route::get('/{id?}', function ($id = null) {
         }
     }
 
-    return view('homepage', compact('finalName', 'guessName'));
+
+    // Event Modal
+    $eventDate = '2026-12-13';
+    $today = now()->toDateString();
+
+    $modalStatus = match (true) {
+        $today < $eventDate => 'invitation',
+        $today === $eventDate => 'celebration',
+        default => 'thankyou',
+    };  
+
+    return view('homepage', compact('finalName', 'guessName', 'modalStatus'));
 });
