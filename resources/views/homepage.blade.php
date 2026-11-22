@@ -990,7 +990,7 @@
             </div>
         </div>
 
-        <audio id="bg-music" loop preload="auto">
+        <audio id="bg-music" loop preload="none">
             <source src="{{ asset('audio/bg-song-2.mpeg') }}" type="audio/mpeg">
         </audio>
 
