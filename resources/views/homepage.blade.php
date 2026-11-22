@@ -720,8 +720,8 @@
         @php
             $rsvpFormUrl = 'https://docs.google.com/forms/d/e/1FAIpQLSdHCaV3pvk391ZXPpdvRGuSgubva8zwDKpWImxAvTuqswkVkA/viewform';
         @endphp
-        <section id="rsvp" class="py-24 px-4 bg-obsidian-950 border-b border-obsidian-800 relative max-w-100 sm:max-w-full">
-            <div class="max-w-5xl mx-auto overflow-hidden">
+        <section id="rsvp" class="py-24 px-4 bg-obsidian-950 border-b border-obsidian-800 relative">
+            <div class="max-w-5xl mx-auto">
                 <div class="text-center mb-14">
                     <span class="text-gold text-xs font-bold uppercase tracking-widest">Konfirmasi Kehadiran</span>
                     <h2 class="font-heading font-black text-3xl sm:text-4xl text-slate-100 uppercase mt-2">Reservasi Tempat</h2>
@@ -733,7 +733,7 @@
 
                 <div class="grid md:grid-cols-5 gap-6 sm:gap-8 items-stretch">
                     <!-- Left Column: Direct Google Form CTA Card -->
-                    <div class="md:col-span-3 max-w-100 bg-obsidian-900 p-7 sm:p-10 rounded-3xl border border-obsidian-800 hover:border-gold/50 transition-all flex flex-col justify-between shadow-2xl">
+                    <div class="md:col-span-3 max-w-100 sm:max-w-none bg-obsidian-900 p-7 sm:p-10 rounded-3xl border border-obsidian-800 hover:border-gold/50 transition-all flex flex-col justify-between shadow-2xl">
                         <div>
                             <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-gold/10 border border-gold/30 text-gold text-xs font-bold uppercase tracking-wider mb-6">
                                 <i data-lucide="clipboard-check" class="w-3.5 h-3.5"></i>
@@ -769,15 +769,15 @@
                             </ul>
                         </div>
 
-                        <div class="space-y-3">
+                        <div class="space-y-3 w-full max-w-100 sm:max-w-none">
                             <a id="rsvpDirectBtn" href="{{ $rsvpFormUrl }}" target="_blank" rel="noopener noreferrer"
                                class="w-full py-4 px-6 rounded-2xl bg-gold hover:bg-amber-400 active:scale-[0.99] text-obsidian-950 font-black text-xs sm:text-sm uppercase tracking-wider transition-all flex items-center justify-center gap-2.5 shadow-lg">
                                 <span>Isi Google Form</span>
                                 <i data-lucide="external-link" class="w-4 h-4"></i>
                             </a>
 
-                            <div class="flex items-center justify-between gap-2 bg-obsidian-950 px-4 py-2.5 rounded-xl border border-obsidian-800">
-                                <span id="rsvpUrlDisplay" class="text-xs font-mono text-slate-400 truncate">{{ $rsvpFormUrl }}</span>
+                            <div class="flex items-center justify-between gap-2 bg-obsidian-950 px-4 py-2.5 rounded-xl border border-obsidian-800 overflow-hidden w-full">
+                                <span id="rsvpUrlDisplay" class="hidden sm:inline-block text-xs font-mono text-slate-400 truncate">{{ $rsvpFormUrl }}</span>
                                 <button type="button" onclick="copyRsvpLink()" id="copyRsvpBtn" class="shrink-0 inline-flex items-center gap-1.5 text-xs font-bold text-gold hover:text-amber-300 transition-colors px-2 py-1">
                                     <i data-lucide="copy" class="w-3.5 h-3.5"></i>
                                     <span id="copyRsvpText">Salin Link</span>
@@ -787,7 +787,7 @@
                     </div>
 
                     <!-- Right Column: High-Contrast Synced QR Code Card -->
-                    <div class="md:col-span-2 bg-obsidian-900 p-7 sm:p-8 rounded-3xl border border-obsidian-800 hover:border-gold/50 transition-all flex flex-col items-center justify-between text-center shadow-2xl">
+                    <div class="md:col-span-2 max-w-100 sm:max-w-none bg-obsidian-900 p-7 sm:p-8 rounded-3xl border border-obsidian-800 hover:border-gold/50 transition-all flex flex-col items-center justify-between text-center shadow-2xl">
                         <div class="w-full">
                             <span class="text-[11px] font-bold uppercase tracking-widest text-gold block">Scan QR Code</span>
                             <p class="text-xs text-slate-400 mt-1">Arahkan kamera HP untuk membuka link pendaftaran</p>
