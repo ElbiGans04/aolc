@@ -719,12 +719,12 @@
                                     </span>
                                     <span>Pendataan konsumsi & tempat duduk acara</span>
                                 </li>
-                                <li class="flex items-center gap-3">
+                                {{-- <li class="flex items-center gap-3">
                                     <span class="w-5 h-5 rounded-full bg-gold/15 text-gold flex items-center justify-center shrink-0">
                                         <i data-lucide="check" class="w-3.5 h-3.5"></i>
                                     </span>
                                     <span>Dapat diisi secara individu maupun rombongan gereja</span>
-                                </li>
+                                </li> --}}
                             </ul>
                         </div>
 
